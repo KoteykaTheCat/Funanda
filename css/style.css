@@ -1,4 +1,33 @@
+.header{
+	background: linear-gradient(rgba(0,0,0,0),#21273C), url(https://media.discordapp.net/attachments/724264502048063539/1114215981863149630/header.png);
+	background-size: cover;
+	background-position: center;
+}
 .members{
 	display: flex;
 	justify-content: center
+}
+.footer{
+	padding: 10px;
+	background-color: black; 
+	margin-top: auto;
+}
+.footer_div{
+	display: flex;
+}
+.links{
+	margin-right: auto;
+	position: relative;
+	bottom: -20px;
+	left: 20px;
+}
+.ktc_smoke{
+	
+}
+.copyright{
+	margin-left: auto;
+	margin-top: auto;
+	position: relative;
+	bottom: 20px;
+	right: 20px;
 }
