@@ -7,6 +7,10 @@
 	display: flex;
 	justify-content: center
 }
+.comments{
+	background-color: #CFE2F3; 
+	padding: 20px;
+}
 .footer{
 	padding: 10px;
 	background-color: black; 
