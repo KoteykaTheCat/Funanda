@@ -1,14 +1,22 @@
+* {
+	padding: 0;
+	margin: 0;
+}
 .header{
 	background: linear-gradient(rgba(0,0,0,0),#21273C), url(https://media.discordapp.net/attachments/724264502048063539/1114215981863149630/header.png);
 	background-size: cover;
 	background-position: center;
+}
+.line{
+	padding-left: 30px;
+	padding-right: 30px;
 }
 .members{
 	display: flex;
 	justify-content: center
 }
 .comments{
-	background-color: #CFE2F3; 
+	background-color: #181928; 
 	padding: 20px;
 }
 .footer{
