@@ -2,26 +2,30 @@
 	padding: 0;
 	margin: 0;
 }
+.header{
+	background: linear-gradient(rgba(0,0,0,0),#21273C), url(https://media.discordapp.net/attachments/724264502048063539/1114215981863149630/header.png);
+	background-size: cover;
+	background-position: center;
+}
 .page{
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 	overflow: hidden;
 }
-.header{
-	background: linear-gradient(rgba(0,0,0,0),#21273C), url(https://media.discordapp.net/attachments/724264502048063539/1114215981863149630/header.png);
-	background-size: cover;
-	background-position: center;
-}
-.content{
-	
-}
 .footer{
 	background-color: black; 
 	margin-top: auto;
+	display: flex;
+	font-family: Tahoma;
+	color: gray;
 }
 
-
+.main{
+	font-family: Arial Black;
+	font-size: 18px;
+	color: white;
+}
 .welcome{
 	padding: 20px;
 	text-align: center;
@@ -34,6 +38,7 @@
 	display: flex;
 	justify-content: center;
 	text-align: center;
+	padding: 20px;
 }
 .member_name{
 	color: white;
@@ -42,10 +47,11 @@
 .comments{
 	background-color: #12131E; 
 	padding: 20px;
+	font-family: Arial Black;
+	font-size: 30px;
+	color: white;
 }
-.footer_div{
-	display: flex;
-}
+
 .links{
 	text-decoration: underline;
 	margin-right: auto;
