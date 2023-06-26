@@ -1,0 +1,63 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+.header{
+	background: linear-gradient(rgba(0,0,0,0),#21273C), url(https://media.discordapp.net/attachments/724264502048063539/1114215981863149630/header.png);
+	background-size: cover;
+	background-position: center;
+}
+.page{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow: hidden;
+}
+.footer{
+	background-color: black; 
+	margin-top: auto;
+	display: flex;
+	font-family: Tahoma;
+	color: gray;
+}
+
+.main{
+	font-family: Arial;
+	font-size: 18px;
+	color: white;
+	display: flex;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 100px;
+	padding-right: 100px;
+	justify-content: center;
+	/* text-align: center; */
+}
+
+.links{
+	text-decoration: underline;
+	margin-right: auto;
+	position: relative;
+	top: 10px;
+	left: 30px;
+	width: 200px;
+	height:80px;
+}
+.youtube,
+.discord{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.ktc_smoke{
+	
+}
+.copyright{
+	text-align: right;
+	margin-left: auto;
+	margin-top: auto;
+	position: relative;
+	bottom: 25px;
+	right: 30px;
+	width: 200px;
+	height: 20px;
+}
