@@ -5,7 +5,20 @@
 
 .header{
 	background-color: black;
-	padding: 8px;
+	padding: 12px;
+	display: flex;
+}
+.header-icon{
+	padding-top: 3px;
+}
+.header-link{
+	padding-left: 18px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	color: gray;
+	font-size: 20px;
+	font-family: Arial;
+	text-decoration: none;
 }
 .page{
 	display: flex;
@@ -31,13 +44,28 @@
 	font-size: 18px;
 	color: white;
 }
-.welcome{
-	padding: 20px;
-	text-align: center;
-}
 .line{
 	padding-left: 30px;
 	padding-right: 30px;
+}
+.welcome,
+.games-title{
+	padding: 20px;
+	text-align: center;
+	font-family: Arial Black;
+	font-size: 18px;
+	color: white;
+}
+.main-member{
+	font-family: Arial;
+	font-size: 18px;
+	color: white;
+	display: flex;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 100px;
+	padding-right: 100px;
+	justify-content: center;
 }
 .members{
 	display: flex;
@@ -45,7 +73,8 @@
 	text-align: center;
 	padding: 20px;
 }
-.member_name{
+.game-link,
+.member-link{
 	color: white;
 	text-decoration: underline;
 }
@@ -55,6 +84,38 @@
 	font-family: Arial Black;
 	font-size: 30px;
 	color: white;
+}
+.games-link{
+	color: white;
+	text-decoration: underline;
+	padding: 30px;
+	text-align: center;
+	font-family: Arial Black;
+	font-size: 30px;
+}
+.main-games{
+	font-family: Arial;
+	font-size: 18px;
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 100px;
+	padding-right: 100px;
+	justify-content: center;
+
+}
+.game{
+	padding: 20px;
+	display: flex;
+}
+.game-title{
+	font-family: Arial Black;
+	font-size: 30px;
+}
+.game-description{
+	font-family: Arial;
+	font-size: 18px;
+	padding-top: 10px;
 }
 
 .links{
@@ -70,9 +131,6 @@
 .discord{
 	padding-top: 10px;
 	padding-bottom: 10px;
-}
-.ktc_smoke{
-	
 }
 .copyright{
 	text-align: right;
