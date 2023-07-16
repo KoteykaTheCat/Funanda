@@ -27,16 +27,34 @@
 	background-position: center;
 }
 .main{
-	font-family: Arial;
+	font-family: Arial Black;
 	font-size: 18px;
 	color: white;
+}
+.welcome{
+	padding: 20px;
+	text-align: center;
+}
+.line{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.members{
 	display: flex;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	padding-left: 100px;
-	padding-right: 100px;
 	justify-content: center;
-	/* text-align: center; */
+	text-align: center;
+	padding: 20px;
+}
+.member_name{
+	color: white;
+	text-decoration: underline;
+}
+.comments{
+	background-color: #12131E; 
+	padding: 20px;
+	font-family: Arial Black;
+	font-size: 30px;
+	color: white;
 }
 
 .links{
