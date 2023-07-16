@@ -2,10 +2,10 @@
 	padding: 0;
 	margin: 0;
 }
+
 .header{
-	background: linear-gradient(rgba(0,0,0,0),#21273C), url(https://media.discordapp.net/attachments/724264502048063539/1114215981863149630/header.png);
-	background-size: cover;
-	background-position: center;
+	background-color: black;
+	padding: 8px;
 }
 .page{
 	display: flex;
@@ -21,6 +21,11 @@
 	color: gray;
 }
 
+.logo{
+	background: linear-gradient(rgba(0,0,0,0),#21273C), url(https://media.discordapp.net/attachments/724264502048063539/1114215981863149630/header.png);
+	background-size: cover;
+	background-position: center;
+}
 .main{
 	font-family: Arial;
 	font-size: 18px;
