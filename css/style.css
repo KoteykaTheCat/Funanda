@@ -2,10 +2,10 @@
 	padding: 0;
 	margin: 0;
 }
+
 .header{
-	background: linear-gradient(rgba(0,0,0,0),#21273C), url(https://media.discordapp.net/attachments/724264502048063539/1114215981863149630/header.png);
-	background-size: cover;
-	background-position: center;
+	background-color: black;
+	padding: 8px;
 }
 .page{
 	display: flex;
@@ -21,35 +21,22 @@
 	color: gray;
 }
 
+.logo{
+	background: linear-gradient(rgba(0,0,0,0),#21273C), url(https://media.discordapp.net/attachments/724264502048063539/1114215981863149630/header.png);
+	background-size: cover;
+	background-position: center;
+}
 .main{
-	font-family: Arial Black;
+	font-family: Arial;
 	font-size: 18px;
 	color: white;
-}
-.welcome{
-	padding: 20px;
-	text-align: center;
-}
-.line{
-	padding-left: 30px;
-	padding-right: 30px;
-}
-.members{
 	display: flex;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 100px;
+	padding-right: 100px;
 	justify-content: center;
-	text-align: center;
-	padding: 20px;
-}
-.member_name{
-	color: white;
-	text-decoration: underline;
-}
-.comments{
-	background-color: #12131E; 
-	padding: 20px;
-	font-family: Arial Black;
-	font-size: 30px;
-	color: white;
+	/* text-align: center; */
 }
 
 .links{
