@@ -2,16 +2,19 @@
 	padding: 0;
 	margin: 0;
 }
+a {
+    text-decoration: none
+}
 
 .header{
 	background-color: black;
 	padding: 12px;
 	display: flex;
 }
-.header-icon{
+.header_icon{
 	padding-top: 3px;
 }
-.header-link{
+.header_link{
 	padding-left: 16px;
 	padding-right: 16px;
 	padding-top: 14px;
@@ -40,30 +43,38 @@
 	background-size: cover;
 	background-position: center;
 }
-.main{
+.title_main,
+.title_games,
+.section,
+.links{
 	font-family: Arial Black;
 	font-size: 18px;
 	color: white;
 }
-.line{
-	padding-left: 30px;
-	padding-right: 30px;
-}
-.welcome,
-.games-title{
-	padding: 20px;
-	text-align: center;
-	font-family: Arial Black;
-	font-size: 18px;
-	color: white;
-}
-.bio{
+.section{
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 	text-align: center;
 	padding: 20px;
+	background-color: #1B1D33;
+	border-radius: 10px;
+	margin-right: 100px;
+	margin-left: 100px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
-.koteykathecat,
+.title_main,
+.title_games{
+	margin-right: 30px;
+	margin-left: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-family: Arial Black;
+	font-size: 30px;
+	color: white;
+}
+.name,
 .avatar{
 	padding: 10px;
 }
@@ -75,40 +86,68 @@
 	align-items: center;
 	padding-left: 30px;
 }
-.my-games{
-	color: white;
-	text-decoration: underline;
-	padding: 30px;
-	text-align: center;
-	font-family: Arial Black;
-	font-size: 30px;
+
+.links{
+	margin: 10px;
 }
-
-
-.main-games{
-	font-family: Arial;
-	font-size: 18px;
-	color: white;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	padding-left: 100px;
-	padding-right: 100px;
+.links_main,
+.links_other{
+	display: flex;
 	justify-content: center;
-
 }
+.links_text{
+	font-size: 30px;
+	color: white;
+	padding-left: 10px;
+	padding-right: 20px;
+}
+.links_image{
+	padding-right: 10px;
+	padding-left: 20px;
+}
+.my_games{
+	border-radius: 10px;
+	margin: 10px;
+	text-align: center;
+	height: 100px;
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.discord{
+	border-radius: 10px;
+	margin: 10px;
+	text-align: center;
+	height: 100px;
+	background: #5662F6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.youtube{
+	border-radius: 10px;
+	margin: 10px;
+	text-align: center;
+	height: 100px;
+	background: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
 .game{
 	padding: 20px;
 	display: flex;
 }
-.game-title{
+.game_link{
+	color: white;
+	text-decoration: underline;
 	font-family: Arial Black;
 	font-size: 30px;
 }
-.game-link{
-	color: white;
-	text-decoration: underline;
-}
-.game-description{
+.game_description{
 	font-family: Arial;
 	font-size: 18px;
 	padding-top: 10px;
@@ -122,8 +161,7 @@
 	font-size: 30px;
 	color: white;
 }
-.links{
-	text-decoration: underline;
+.links_footer{
 	margin-right: auto;
 	position: relative;
 	top: 10px;
@@ -131,8 +169,7 @@
 	width: 200px;
 	height:80px;
 }
-.youtube,
-.discord{
+.link_footer{
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
