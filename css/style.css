@@ -55,13 +55,14 @@ a {
 	display: flex;
 	justify-content: left;
 	text-align: center;
-	padding: 20px;
+	padding: 10px;
 	background-color: #1B1D33;
 	border-radius: 10px;
 	margin-right: 100px;
 	margin-left: 100px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	align-items: center;
 }
 .title_main,
 .title_games{
@@ -74,6 +75,43 @@ a {
 	font-size: 30px;
 	color: white;
 }
+
+.links{
+	display: flex;
+	justify-content: center;
+}
+.links_text{
+	font-size: 30px;
+	color: white;
+	padding-right: 20px;
+}
+.links_image{
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.our_games{
+	border-radius: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+	height: 100px;
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.discord_server{
+	border-radius: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+	height: 100px;
+	background: #5662F6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .name,
 .avatar{
 	padding: 10px;
@@ -86,54 +124,35 @@ a {
 	align-items: center;
 	padding-left: 30px;
 }
-
-.links{
-	margin: 10px;
-}
-.links_main,
-.links_other{
-	display: flex;
-	justify-content: center;
-}
-.links_text{
-	font-size: 30px;
-	color: white;
-	padding-left: 10px;
-	padding-right: 20px;
-}
-.links_image{
-	padding-right: 10px;
-	padding-left: 20px;
-}
-.my_games{
-	border-radius: 10px;
-	margin: 10px;
-	text-align: center;
-	height: 100px;
-	background: black;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.discord{
-	border-radius: 10px;
-	margin: 10px;
-	text-align: center;
-	height: 100px;
-	background: #5662F6;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.member_links{
+	margin: 20px
 }
 .youtube{
 	border-radius: 10px;
-	margin: 10px;
 	text-align: center;
-	height: 100px;
+	height: 75px;
+	width: 75px;
 	background: red;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 10px;
+}
+.discord{
+	border-radius: 10px;
+	text-align: center;
+	height: 75px;
+	width: 75px;
+	background: #5662F6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+.empty{
+	width: 75px;
+	height: 75px;
+	margin: 10px;
 }
 
 
