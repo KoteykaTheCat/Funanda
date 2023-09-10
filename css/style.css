@@ -31,14 +31,6 @@ a {
 	min-height: 100vh;
 	overflow: hidden;
 }
-.footer{
-	background-color: black; 
-	margin-top: auto;
-	display: flex;
-	font-family: Tahoma;
-	color: gray;
-}
-
 .logo{
 	background: linear-gradient(rgba(0,0,0,0),#21273C), url(https://media.discordapp.net/attachments/724264502048063539/1114215981863149630/header.png);
 	background-size: cover;
@@ -174,32 +166,16 @@ a {
 }
 
 
-.comments{
-	background-color: #12131E; 
-	padding: 20px;
-	font-family: Arial Black;
-	font-size: 30px;
-	color: white;
-}
-.links_footer{
-	margin-right: auto;
-	position: relative;
-	top: 10px;
-	left: 30px;
-	width: 200px;
-	height:80px;
-}
-.link_footer{
-	padding-top: 10px;
-	padding-bottom: 10px;
+.footer{
+	background-color: black; 
+	margin-top: auto;
+	font-family: Tahoma;
+	color: gray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .copyright{
-	text-align: right;
-	margin-left: auto;
-	margin-top: auto;
-	position: relative;
-	bottom: 25px;
-	right: 30px;
-	width: 200px;
-	height: 20px;
+	position: absolute;
+	right: 20px;
 }
