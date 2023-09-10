@@ -6,6 +6,24 @@ a {
     text-decoration: none
 }
 
+@media screen and (max-width: 3600px){
+	.header_icon{
+		height: 50px;
+	}
+	.header_link{
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 576px){
+	.header_icon{
+		height: 120px;
+	}
+	.header_link{
+		font-size: 30px;
+	}
+}
+
+
 .header{
 	background-color: black;
 	padding: 12px;
@@ -20,9 +38,9 @@ a {
 	padding-top: 14px;
 	padding-bottom: 14px;
 	color: gray;
-	font-size: 20px;
 	font-family: Arial;
-	text-decoration: none;
+	display: flex;
+	align-items: center;
 }
 .page{
 	display: flex;
