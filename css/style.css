@@ -24,6 +24,10 @@ a {
 	display: flex;
 	align-items: center;
 	font-size: 20px;
+	transition: 0.25s;
+}
+.header_link:hover{
+	color: white;
 }
 .page{
 	display: flex;
@@ -56,6 +60,10 @@ a {
 	margin-top: 15px;
 	margin-bottom: 15px;
 	align-items: center;
+	transition: 0.25s;
+}
+.section.game:hover{
+	background: #19162D;
 }
 .title_main,
 .title_games{
@@ -88,10 +96,14 @@ a {
 	margin-right: 10px;
 	text-align: center;
 	height: 100px;
-	background: black;
+	background: #141414;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: 0.25s;
+}
+.our_games:hover{
+	background: black;
 }
 .discord_server{
 	border-radius: 10px;
@@ -103,7 +115,12 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: 0.25s;
 }
+.discord_server:hover{
+	background: #4242E5;
+}
+
 
 .name,
 .avatar{
@@ -130,6 +147,10 @@ a {
 	justify-content: center;
 	align-items: center;
 	margin: 10px;
+	transition: 0.25s;
+}
+.youtube:hover{
+	background: #BA031C;
 }
 .discord{
 	border-radius: 10px;
@@ -141,6 +162,10 @@ a {
 	justify-content: center;
 	align-items: center;
 	margin: 10px;
+	transition: 0.25s;
+}
+.discord:hover{
+	background: #4242E5;
 }
 .empty{
 	width: 75px;
