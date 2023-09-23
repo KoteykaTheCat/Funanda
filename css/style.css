@@ -5,6 +5,13 @@
 a {
     text-decoration: none
 }
+.no_select,
+.header_icon,
+.links_image,
+.ktc_smoke{
+	user-select: none;
+}
+
 
 .header{
 	background-color: black;
