@@ -1,14 +1,10 @@
 * {
 	padding: 0;
 	margin: 0;
-	font-family: PashaMarsedesse;
+	font-family: Ubuntu;
 }
 a {
     text-decoration: none
-}
-@font-face {
-	font-family: PashaMarsedesse;
-	src: url(PashaMarsedesse.ttf);
 }
 .no_select,
 .header_icon,
@@ -35,7 +31,7 @@ a {
 	color: gray;
 	display: flex;
 	align-items: center;
-	font-size: 26px;
+	font-size: 22px;
 	transition: 0.25s;
 }
 .header_link:hover{
@@ -85,8 +81,9 @@ a {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	text-align: center;
-	font-size: 50px;
+	font-size: 40px;
 	color: white;
+	font-family: Russo One;
 }
 
 .links{
@@ -135,6 +132,7 @@ a {
 .avatar{
 	padding: 10px;
 	font-size: 30px;
+	font-family: Russo One;
 }
 .description{
 	text-align: left;
@@ -143,7 +141,7 @@ a {
 	align-items: center;
 	padding-left: 30px;
 	padding-right: 30px;
-	font-size: 24px;
+	font-size: 22px;
 }
 .member_links{
 	margin: 20px
@@ -197,7 +195,7 @@ a {
 .footer{
 	background-color: black; 
 	margin-top: auto;
-	font-size: 24px;
+	font-size: 20px;
 	color: gray;
 	display: flex;
 	justify-content: center;
