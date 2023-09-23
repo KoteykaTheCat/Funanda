@@ -36,7 +36,7 @@ a {
 	overflow: hidden;
 }
 .logo{
-	background: linear-gradient(rgba(0,0,0,0),#21273C), url(https://media.discordapp.net/attachments/724264502048063539/1114215981863149630/header.png);
+	background: linear-gradient(rgba(33,39,60,0.25),#21273C), url(https://media.discordapp.net/attachments/724264502048063539/1114215981863149630/header.png);
 	background-size: cover;
 	background-position: center;
 }
