@@ -16,7 +16,7 @@ a {
 
 
 .header{
-	background-color: black;
+	background: black;
 	padding: 12px;
 	display: flex;
 }
@@ -27,7 +27,7 @@ a {
 .header_icon{
 	width: 64px;
 }
-.header_link{
+.header_button.main{
 	padding-left: 16px;
 	padding-right: 16px;
 	padding-top: 6px;
@@ -39,13 +39,33 @@ a {
 	align-items: center;
 	font-size: 22px;
 	border-radius: 50px;
-	background-color: black;
+	background: black;
 	transition: 0.25s;
 }
-.header_link:hover{
-	color: black;
-	background-color: white;
+.header_button.translate{
+	position: absolute;
+	right: 20px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	color: white;
+	display: flex;
+	align-items: center;
+	font-size: 22px;
+	border-radius: 50px;
+	background: black;
+	transition: 0.25s;
 }
+.header_button.main:hover,
+.header_button.translate:hover{
+	color: black;
+	background: white;
+}
+
+
 .page{
 	display: flex;
 	flex-direction: column;
@@ -60,8 +80,7 @@ a {
 .logo_img{
 	padding: 40px;
 }
-.title_main,
-.title_games,
+.title,
 .section,
 .links{
 	color: white;
@@ -75,7 +94,7 @@ a {
 	justify-content: left;
 	text-align: center;
 	padding: 10px;
-	background-color: #1B1D33;
+	background: #1B1D33;
 	border-radius: 20px;
 	margin-right: 100px;
 	margin-left: 100px;
@@ -87,8 +106,7 @@ a {
 .section.game:hover{
 	background: #19162D;
 }
-.title_main,
-.title_games{
+.title{
 	margin-right: 30px;
 	margin-left: 30px;
 	margin-top: 20px;
@@ -150,8 +168,7 @@ a {
 	font-size: 30px;
 	font-family: Russo One;
 }
-.member_description,
-.game_description{
+.member_description{
 	text-align: left;
 	display: flex;
 	justify-content: center;
@@ -216,13 +233,18 @@ a {
 	font-size: 30px;
 }
 .game_description{
-	font-size: 18px;
-	padding-top: 10px;
+	text-align: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 20px;
 }
 
 
 .footer{
-	background-color: black; 
+	background: black; 
 	margin-top: auto;
 	font-size: 20px;
 	color: gray;
