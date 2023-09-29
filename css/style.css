@@ -58,6 +58,12 @@ a {
 	border-radius: 50px;
 	background: black;
 	transition: 0.25s;
+	justify-content: center;
+	align-items: center;
+}
+.translate_component{
+	padding-left: 5px;
+	padding-right: 5px;
 }
 .header_button.main:hover,
 .header_button.translate:hover{
