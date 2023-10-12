@@ -312,6 +312,9 @@ a {
 	.translate_component.image{
 		height: 20px;
 	}
+	.logo{
+		margin-top: 80px;
+	}
 	.logo_img{
 		height: 200px;
 	}
@@ -328,11 +331,11 @@ a {
 	}
 	.links_button.our_games{
 		margin: 0px 0px 10px 0px;
-		width: 260px;
+		width: 220px;
 	}
 	.links_button.discord_server{
 		margin: 10px 0px 0px 0px;
-		width: 260px;
+		width: 220px;
 	}
 	.section{
 		flex-direction: column;
@@ -362,6 +365,14 @@ a {
 	.game_icon{
 		width: 150px;
 	}
+	.links_image{
+		height: 40px;
+		margin: 7.5px;
+	}
+	.links_text{
+		font-size: 26px;
+		margin: 7.5px;
+	}
 	.links_image.scale{
 		height: 30px;
 	}
@@ -371,6 +382,7 @@ a {
 	}
 	.links_text.scale{
 		font-size: 22px;
+		margin: 7.5px;
 	}
 	.header_links{
 		padding: 12px 4px 12px 4px;
@@ -386,6 +398,9 @@ a {
 	}
 	.footer{
 		justify-content: left;
+	}
+	.copyright{
+		font-size: 16px;
 	}
 }
 @media (max-width: 380px) {
@@ -433,5 +448,6 @@ a {
 	}
 	.links_text{
 		font-size: 24px;
+		margin: 7.5px;
 	}
 }
