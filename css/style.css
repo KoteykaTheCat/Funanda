@@ -79,24 +79,38 @@ a {
 }
 .logo{
 	margin-top: 88px;
-	background: linear-gradient(rgba(33,39,60,0.25),#21273C), url(https://media.discordapp.net/attachments/724264502048063539/1114215981863149630/header.png);
+	background: url(https://cdn.discordapp.com/attachments/724264502048063539/1163522968194928680/image.png);
 	background-size: cover;
-	background-position: center;
+	background-position: bottom;
 	display: flex;
-	justify-content: center;
 }
 .logo_img{
-	padding: 40px;
+	padding: 40px 40px 100px 120px;
 	height: 300px;
 }
+.logo_title{
+	background: linear-gradient(135deg, #1B1D33, #170F2B);
+	border-radius: 20px;
+	margin: auto 50px auto 50px;
+	padding: 20px;
+}
+
 .title,
-.section,
-.links{
+.description{
 	color: white;
+	padding: 10px 30px 10px 30px;
+	font-family: Russo One;
+}
+.title{
+	font-size: 38px;
 }
 .description{
 	font-size: 24px;
-	padding: 20px;
+}
+
+.section,
+.links{
+	color: white;
 }
 .section{
 	display: flex;
@@ -107,13 +121,6 @@ a {
 	border-radius: 20px;
 	margin: 20px 100px 20px 100px;
 	align-items: center;
-}
-.title{
-	margin: 20px 30px 20px 30px;
-	text-align: center;
-	font-size: 38px;
-	color: white;
-	font-family: Russo One;
 }
 
 .links{
@@ -270,6 +277,16 @@ a {
 
 
 @media (max-width: 960px) {
+	.logo_img{
+		padding: 40px 40px 100px 120px;
+		height: 200px;
+	}
+	.title{
+		font-size: 30px;
+	}
+	.description{
+		font-size: 18px;
+	}
 	.member_links{
 		margin: 0px 5px 0px 5px;
 	}
@@ -315,16 +332,24 @@ a {
 	}
 	.logo{
 		margin-top: 80px;
+		flex-direction: column;
+	}
+	.logo_title{
+		margin: 20px 50px 80px 50px;
+		padding: 10px;
 	}
 	.logo_img{
-		height: 200px;
+		padding: 20px;
 	}
 	.title{
-		font-size: 30px;
+		font-size: 26px;
 	}
 	.description{
-		font-size: 20px;
-		padding: 5px 20px 5px 20px;
+		font-size: 16px;
+	}
+	.title,
+	.description{
+		    padding: 10px 20px 10px 20px;
 	}
 	.links{
 		flex-direction: column;
@@ -411,6 +436,12 @@ a {
 	.logo{
 		margin-top: 75px;
 	}
+	.title{
+		font-size: 22px;
+	}
+	.description{
+		font-size: 12px;
+	}
 	.header_links{
 		padding: 16px 0px 16px 0px;
 	}
@@ -426,12 +457,6 @@ a {
 	}
 	.translate_component.image{
 		height: 15px;
-	}
-	.title{
-		font-size: 26px;
-	}
-	.description{
-		font-size: 18px;
 	}
 	.logo_img{
 		height: 175px;
