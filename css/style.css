@@ -430,6 +430,11 @@ a {
 		font-size: 16px;
 	}
 }
+@media (max-width: 600px) {
+	.logo_img{
+		height: 150px;
+	}
+}
 @media (max-width: 380px) {
 	.header{
 		padding: 8px;
