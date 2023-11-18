@@ -79,14 +79,14 @@ a {
 }
 .logo{
 	margin-top: 88px;
-	background: url(https://cdn.discordapp.com/attachments/724264502048063539/1163522968194928680/image.png);
+	background: url(https://raw.githubusercontent.com/KoteykaTheCat/ktcstudios/main/img/header_ktcstudios.png);
 	background-size: cover;
 	background-position: bottom;
 	display: flex;
 	justify-content: center;
 }
 .logo_img{
-	padding: 40px 40px 100px 120px;
+	margin: 40px 40px 100px 120px;
 	height: 300px;
 }
 .logo_title{
@@ -94,6 +94,11 @@ a {
 	border-radius: 20px;
 	margin: auto 100px auto 50px;
 	padding: 20px;
+}
+.logo.its_autumn{
+	background: url(https://raw.githubusercontent.com/KoteykaTheCat/ktcstudios/main/img/header_its_autumn.png);
+	background-size: cover;
+	background-position: bottom;
 }
 
 .title,
@@ -132,7 +137,7 @@ a {
 .links_text{
 	font-size: 32px;
 	color: white;
-	margin: 10px;
+	margin: 10px 15px 10px 10px;
 }
 .links_image{
 	margin: 10px;
@@ -151,10 +156,10 @@ a {
 	align-items: center;
 }
 
-.links_button.our_games{
+.links_button.black{
 	background: #0C0C0C;
 }
-.links_button.our_games:hover{
+.links_button.black:hover{
 	background: black;
 }
 .links_button.discord_server{
@@ -162,6 +167,11 @@ a {
 }
 .links_button.discord_server:hover{
 	background: #4242E5;
+}
+.links_button:hover,
+.member_link:hover,
+.game_link:hover{
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
 }
 
 
@@ -257,7 +267,7 @@ a {
 }
 .game_version{
 	text-align: left;
-	margin: 10px 10px 20px 10px;
+	margin: 10px 10px 30px 10px;
 	font-size: 16px;
 }
 
@@ -279,7 +289,7 @@ a {
 
 @media (max-width: 960px) {
 	.logo_img{
-		padding: 40px 40px 100px 120px;
+		margin: 40px 40px 100px 120px;
 		height: 200px;
 	}
 	.title{
@@ -332,15 +342,16 @@ a {
 		height: 20px;
 	}
 	.logo{
-		margin-top: 80px;
+		margin-top: 75px;
 		flex-direction: column;
+		align-items: center;
 	}
 	.logo_title{
 		margin: 20px 50px 80px 50px;
 		padding: 10px;
 	}
 	.logo_img{
-		padding: 20px;
+		margin: 20px;
 	}
 	.title{
 		font-size: 26px;
@@ -440,7 +451,7 @@ a {
 		padding: 8px;
 	}
 	.logo{
-		margin-top: 75px;
+		margin-top: 70px;
 	}
 	.title{
 		font-size: 22px;
@@ -465,7 +476,7 @@ a {
 		height: 15px;
 	}
 	.logo_img{
-		height: 175px;
+		height: 150px;
 	}
 	.links_image{
 		height: 40px;
