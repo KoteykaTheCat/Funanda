@@ -1,11 +1,16 @@
-* {
+*{
 	padding: 0;
 	margin: 0;
 	font-family: Ubuntu;
 	transition: 0.25s;
 }
-a {
+a{
     text-decoration: none
+}
+.line{
+	margin: 30px 100px 30px 100px;
+	background: linear-gradient(90deg, #324459, #475D6D);
+	height: 2px;
 }
 .no_select,
 .header_icon,
@@ -287,6 +292,38 @@ a {
 }
 
 
+.section_no_bg{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin: 20px 100px 20px 100px;
+	align-items: center;
+}
+.foxplane{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 10px;
+	background: linear-gradient(135deg, #1B1D33, #170F2B);
+	border-radius: 20px;
+	margin: 0 100px 0 100px;
+	align-items: center;
+	color: white;
+}
+.name_foxplane{
+	padding: 5px 0 5px 0;
+	font-size: 20px;
+	font-family: Russo One;
+}
+.avatar_foxplane{
+	padding-top: 5px;
+	width: 130px;
+}
+.description_foxplane{
+	padding: 10px 20px 10px 10px;
+}
+
+
 @media (max-width: 960px) {
 	.logo_img{
 		margin: 40px 40px 100px 120px;
@@ -439,6 +476,20 @@ a {
 	}
 	.copyright{
 		font-size: 16px;
+	}
+	
+	.name_foxplane{
+		padding: 5px 0 5px 0;
+		font-size: 16px;
+		font-family: Russo One;
+	}
+	.avatar_foxplane{
+		padding-top: 5px;
+		width: 100px;
+	}
+	.description_foxplane{
+		padding: 10px 20px 10px 10px;
+		font-size: 14px;
 	}
 }
 @media (max-width: 600px) {
