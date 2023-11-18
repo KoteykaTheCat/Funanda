@@ -18,7 +18,8 @@ a{
 .logo_img,
 .links_image,
 .member_avatar,
-.ktc_smoke{
+.ktc_smoke,
+.avatar_foxplane{
 	user-select: none;
 }
 .body{
