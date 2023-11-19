@@ -25,25 +25,28 @@
 	<body class="body">
 		<div class="page">
 			<header class="header">
-				<img class="header_icon" src="../../img/icon.svg">
-				<div class="header_links">
-					<a class="header_button main" href="../../"> Главная </a>
-					<a class="header_button main" href="../"> Игры </a>
+				<div class="header_div">
+					<img class="header_icon" src="../../img/icon.svg">
+					<div class="header_links">
+						<a class="header_button main" href="../../"> Главная </a>
+						<a class="header_button main" href="../"> Игры </a>
+					</div>
 				</div>
 				<a class="header_button translate" href="../../en/games/itsautumn">
-					<img class="translate_component image" src="../../img/icon_en.svg">
-					<div class="translate_component text"> Eng </div>
+					<img class="translate_flag" src="../../img/icon_en.svg"> Eng
 				</a>
 			</header>
 			<main class="content">
 				<section class="logo its_autumn">
-					<img class="logo_img" src="../../img/icon_its_autumn.png">
-					<div class="logo_title">
-						<div class="title"> It's Autumn </div>
+					<div class="logo_div">
+						<img class="logo_img" src="../../img/icon_its_autumn.png">
+						<div class="logo_title">
+							<div class="title"> It's Autumn </div>
+						</div>
 					</div>
 				</section>
 				
-				<section class="section game">
+				<section class="section_game_description">
 					<div>
 						<div class="game_description">
 							Описание 🥸
@@ -60,11 +63,37 @@
 					</div>
 				</section>
 				
+				<section class="section_screenshots">
+					<div class="screenshots">
+						<div class="slides">
+							<input type="radio" name="r" id="r1" checked>
+							<input type="radio" name="r" id="r2">
+							
+							<div class="screenshot s1"><img src="../../img/screen_its_autumn_0.png"></div>
+							<div class="screenshot"><img src="../../img/screen_its_autumn_1.png"></div>
+						</div>
+						<div class="screenshots_nav">
+							<label for="r1" class="sc_nav_bar"></label>
+							<label for="r2" class="sc_nav_bar"></label>
+						</div>
+					</div>
+				</section>
+				
 				<section class="links">
 					<a class="links_button black" href="">
 						<img class="links_image" src="../../img/icon_windows.svg">
 						<div class="links_text"> Windows </div>
 					</a>
+				</section>
+				
+				<section class="section changelog">
+					<div>
+						<div class="ch_content title"> Изменения </div>
+						<div class="ch_content cur_ver"> Dev 0.0.0.1 </div>
+						<div class="ch_content content">
+							• Игра выйдет
+						</div>
+					</div>
 				</section>
 			</main>
 			

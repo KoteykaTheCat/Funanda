@@ -14,7 +14,7 @@ a{
 }
 .no_select,
 .header_icon,
-.translate_component.image,
+.translate_flag,
 .logo_img,
 .links_image,
 .member_avatar,
@@ -32,8 +32,13 @@ a{
 	background: black;
 	padding: 12px;
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 	box-shadow: 0 0 20px black;
+}
+.header_div{
+	display: flex;
+	align-items: center;
 }
 .header_links{
 	display: flex;
@@ -42,7 +47,7 @@ a{
 .header_icon{
 	height: 64px;
 }
-.header_button.main{
+.header_button{
 	padding: 6px 16px 6px 16px;
 	margin: 0px 5px 0px 5px;
 	color: white;
@@ -52,31 +57,17 @@ a{
 	border-radius: 50px;
 	background: black;
 }
-.header_button.translate{
-	position: absolute;
-	right: 50px;
-	padding: 7.5px 16px 7.5px 16px;
-	color: white;
-	display: flex;
-	align-items: center;
-	font-size: 22px;
-	border-radius: 50px;
-	background: black;
-	justify-content: center;
-	align-items: center;
+.translate{
+	margin: 0px 30px 0px 5px;
 }
-.translate_component{
-	padding: 0px 5px 0px 5px;
-}
-.translate_component.image{
+.translate_flag{
+	padding: 0px 10px 0px 5px;
 	height: 25px;
 }
-.header_button.main:hover,
-.header_button.translate:hover{
+.header_button:hover{
 	color: black;
 	background: white;
 }
-
 
 .page{
 	display: flex;
@@ -92,8 +83,12 @@ a{
 	display: flex;
 	justify-content: center;
 }
+.logo_div{
+	display: flex;
+	padding-bottom: 40px;
+}
 .logo_img{
-	margin: 40px 40px 100px 120px;
+	margin: 60px 40px 80px 120px;
 	height: 300px;
 }
 .logo_title{
@@ -122,17 +117,23 @@ a{
 }
 
 .section,
+.section_game_description,
 .links{
 	color: white;
 }
-.section{
+.section,
+.section_game_description{
 	display: flex;
-	justify-content: left;
+	justify-content: space-between;
 	text-align: center;
 	padding: 10px;
 	background: linear-gradient(135deg, #1B1D33, #170F2B);
 	border-radius: 20px;
 	margin: 20px 100px 20px 100px;
+	align-items: center;
+}
+.section_main{
+	display: flex;
 	align-items: center;
 }
 
@@ -242,7 +243,8 @@ a{
 }
 
 
-.game{
+.game,
+.section_game_description{
 	padding: 20px;
 	display: flex;
 }
@@ -276,6 +278,90 @@ a{
 	text-align: left;
 	margin: 10px 10px 30px 10px;
 	font-size: 16px;
+}
+
+
+#r1:checked ~ .s1{
+	margin-left: 0;
+}
+#r2:checked ~ .s1{
+	margin-left: -50%;
+}
+
+
+.screenshot{
+	width: 50%;
+}
+.slides{
+	width: 200%;
+	height: 100%;
+	display: flex;
+}
+
+.section_screenshots{
+	display: flex;
+	justify-content: center;
+}
+.screenshots{
+	width: 800px;
+	height: 420px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.screenshot img{
+	width: 100%;
+	height: 100%;
+	user-select: none;
+}
+.screenshots_nav{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	bottom: 25px;
+}
+.sc_nav_bar{
+	width: 50px;
+	height: 15px;
+	margin: 5px;
+	cursor: pointer;
+	background-color: #1B1D33;
+	border-radius: 5px;
+}
+.sc_nav_bar:hover{
+	background-color: #170F2B;
+	box-shadow: 0 0 7.5px rgba(0, 0, 0, 0.5);
+}
+input[name="r"]{
+	position: absolute;
+	visibility: hidden;
+}
+
+
+.changelog{
+	padding: 20px;
+	text-align: left;
+	flex-direction: column;
+	align-items: normal;
+}
+.ch_content{
+	margin: 5px 10px 5px 10px;
+}
+.ch_content.title{
+	padding: 0;
+	text-align: center;
+}
+.ch_content.cur_ver{
+	font-family: Russo One;
+	font-size: 28px;
+	margin-top: 20px;
+}
+.ch_content.ver{
+	font-family: Russo One;
+	font-size: 20px;
+	margin-top: 20px;
+}
+.ch_content.content{
+	font-size: 20px;
 }
 
 
@@ -328,7 +414,7 @@ a{
 
 @media (max-width: 960px) {
 	.logo_img{
-		margin: 40px 40px 100px 120px;
+		margin: 40px 40px 40px 120px;
 		height: 200px;
 	}
 	.title{
@@ -358,6 +444,19 @@ a{
 	.game_icon{
 		width: 200px;
 	}
+	.screenshots{
+		width: 600px;
+		height: 315px;
+	}
+	.ch_content.cur_ver{
+		font-size: 26px;
+	}
+	.ch_content.ver{
+		font-size: 18px;
+	}
+	.ch_content.content{
+		font-size: 18px;
+	}
 	.links_image.scale{
 		height: 40px;
 	}
@@ -373,24 +472,27 @@ a{
 	.header_icon{
 		height: 48px;
 	}
-	.header_button.main {
+	.header_button{
 		padding: 6px 16px 6px 16px;
 		font-size: 18px;
 	}
-	.translate_component.image{
+	.translate_flag{
 		height: 20px;
 	}
 	.logo{
 		margin-top: 75px;
+	}
+	.logo_div{
 		flex-direction: column;
 		align-items: center;
+		padding: 0;
 	}
 	.logo_title{
-		margin: 20px 50px 80px 50px;
+		margin: 10px 50px 80px 50px;
 		padding: 10px;
 	}
 	.logo_img{
-		margin: 20px;
+		margin: 30px 20px 10px 20px;
 	}
 	.title{
 		font-size: 26px;
@@ -419,6 +521,17 @@ a{
 		align-items: center;
 		margin: 10px 40px 10px 40px;
 	}
+	.section_main{
+		flex-direction: column;
+	}
+	.section_game_description{
+		flex-direction: column;
+		align-items: normal;
+		margin: 10px 40px 10px 40px;
+	}
+	.changelog{
+		align-items: normal;
+	}
 	.empty{
 		display: none;
 	}
@@ -442,6 +555,19 @@ a{
 	.game_icon{
 		width: 150px;
 	}
+	.ch_content.cur_ver{
+		font-size: 22px;
+	}
+	.ch_content.ver{
+		font-size: 15px;
+	}
+	.ch_content.content{
+		font-size: 15px;
+	}
+	.screenshots{
+		width: 400px;
+		height: 210px;
+	}
 	.links_image{
 		height: 40px;
 		margin: 7.5px;
@@ -460,18 +586,6 @@ a{
 	.links_text.scale{
 		font-size: 22px;
 		margin: 7.5px;
-	}
-	.header_links{
-		padding: 12px 4px 12px 4px;
-	}
-	.header_button.main{
-		padding: 6px 12px 6px 12px;
-	}
-	.header_button.translate{
-		padding: 7.5px 12px 7.5px 12px;
-	}
-	.translate_component.text{
-		display: none;
 	}
 	.footer{
 		justify-content: left;
@@ -497,6 +611,19 @@ a{
 @media (max-width: 600px) {
 	.logo_img{
 		height: 150px;
+		margin: 20px 20px 10px 20px;
+	}
+	.logo_title{
+		margin: 10px 50px 60px 50px;
+	}
+	.header_links{
+		padding: 12px 4px 12px 4px;
+	}
+	.header_button.main{
+		padding: 6px 12px 6px 12px;
+	}
+	.header_button.translate{
+		padding: 7.5px 12px 7.5px 12px;
 	}
 }
 @media (max-width: 380px) {
@@ -518,18 +645,19 @@ a{
 	.header_icon{
 		height: 50px;
 	}
-	.header_button.main{
+	.header_button{
 		padding: 4px 8px 4px 8px;
 		font-size: 16px;
 	}
-	.header_button.translate{
-		right: 30px;
-	}
-	.translate_component.image{
+	.translate_flag{
+		padding: 0px 10px 0px 2px;
 		height: 15px;
 	}
 	.logo_img{
-		height: 150px;
+		height: 130px;
+	}
+	.logo_title{
+		margin: 10px 50px 50px 50px;
 	}
 	.links_image{
 		height: 40px;
