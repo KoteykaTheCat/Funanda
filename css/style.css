@@ -659,6 +659,10 @@ input[name="r"]{
 	.logo_title{
 		margin: 10px 50px 50px 50px;
 	}
+	.screenshots{
+		width: 300px;
+		height: 160px;
+	}
 	.links_image{
 		height: 40px;
 	}
