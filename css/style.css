@@ -35,6 +35,7 @@ a{
 	justify-content: space-between;
 	align-items: center;
 	box-shadow: 0 0 20px black;
+	z-index: 1;
 }
 .header_div{
 	display: flex;
@@ -285,15 +286,21 @@ a{
 	margin-left: 0;
 }
 #r2:checked ~ .s1{
+	margin-left: -25%;
+}
+#r3:checked ~ .s1{
 	margin-left: -50%;
+}
+#r4:checked ~ .s1{
+	margin-left: -75%;
 }
 
 
 .screenshot{
-	width: 50%;
+	width: 25%;
 }
 .slides{
-	width: 200%;
+	width: 400%;
 	height: 100%;
 	display: flex;
 }
