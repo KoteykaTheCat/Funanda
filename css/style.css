@@ -286,21 +286,24 @@ a{
 	margin-left: 0;
 }
 #r2:checked ~ .s1{
-	margin-left: -25%;
+	margin-left: -20%;
 }
 #r3:checked ~ .s1{
-	margin-left: -50%;
+	margin-left: -40%;
 }
 #r4:checked ~ .s1{
-	margin-left: -75%;
+	margin-left: -60%;
+}
+#r5:checked ~ .s1{
+	margin-left: -80%;
 }
 
 
 .screenshot{
-	width: 25%;
+	width: 20%;
 }
 .slides{
-	width: 400%;
+	width: 500%;
 	height: 100%;
 	display: flex;
 }
