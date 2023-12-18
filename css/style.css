@@ -526,6 +526,9 @@ input[name="r"]{
 		margin: 10px 0px 0px 0px;
 		width: 220px;
 	}
+	.android{
+		margin-top: 10px;
+	}
 	.section{
 		flex-direction: column;
 		align-items: center;
