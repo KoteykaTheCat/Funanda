@@ -316,6 +316,8 @@ a{
 .section_screenshots{
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 .screenshots{
 	width: 800px;
@@ -332,7 +334,7 @@ a{
 	display: flex;
 	justify-content: center;
 	position: relative;
-	bottom: 25px;
+	margin: 5px;
 }
 .sc_nav_bar{
 	width: 50px;
