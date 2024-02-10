@@ -593,7 +593,7 @@ input[name="r"]{
 		margin: 7.5px;
 	}
 	.links_text{
-		font-size: 26px;
+		font-size: 22px;
 		margin: 7.5px;
 	}
 	.links_image.scale{
@@ -695,7 +695,7 @@ input[name="r"]{
 		width: 210px;
 	}
 	.links_text{
-		font-size: 24px;
+		font-size: 20px;
 		margin: 7.5px;
 	}
 }
