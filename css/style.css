@@ -92,6 +92,8 @@ a{
 	margin: 60px 40px 80px 120px;
 	height: 300px;
 	border-radius: 20px;
+}
+.logo_img.shadow{
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
 }
 .logo_title{
