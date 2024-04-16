@@ -91,7 +91,6 @@ a{
 .logo_img{
 	margin: 60px 40px 80px 120px;
 	height: 300px;
-	border-radius: 20px;
 }
 .logo_img.shadow{
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
@@ -579,6 +578,7 @@ input[name="r"]{
 	}
 	.name{
 		font-size: 20px;
+		text-align: center;
 	}
 	.member_description{
 		padding: 10px 20px 10px 20px;
