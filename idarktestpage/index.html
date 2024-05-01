@@ -14,7 +14,7 @@
 		<meta property="og:site_name" content="IriDark's Portfolio">
 		
 		<title> IriDark's Portfolio </title>
-		<meta property="og:locale" content="ru">
+		<meta property="og:locale" content="en">
 		<meta name="og:title" content="IriDark's Portfolio">
 		<meta name="og:description" content="Pixel Artist and Java coder">
 		<meta name="description" content="Pixel Artist and Java coder">
@@ -29,9 +29,64 @@
 				<a class="header_b" href="store"> Store </a>
 			</header>
 			<main>
+				<div class="gallery" id="gallery" onclick="close_gallery()">
+					<img class="gallery_img" src="img/items_1.png" id="gallery_img">
+				</div>
 				<div class="profile">
-					<img class="circle" src="img/avatar.png" height=150 alt="avatar">
-					<div class="profile_nickname"> IriDark </div>
+					<img class="circle" src="img/avatar.png" height=250 alt="avatar">
+					<div class="profile_nickname"> Hi! I'm <span style="color: slategray"> IriDark </span> </div>
+					<div class="profile_des">
+						I am pixel artist and java coder <br>
+						Here is my arts
+					</div>
+				</div>
+				<div class="p1">
+					<div> Lexicon </div>
+					<img onclick="open_gallery(this)" src="img/lexicon.png">
+				</div>
+				<div class="p2">
+					<img onclick="open_gallery(this)" src="img/boss_bars.png">
+					<div> Boss bars </div>
+				</div>
+				<div class="p1">
+					<div> Icons </div>
+					<img onclick="open_gallery(this)" src="img/icons.png">
+				</div>
+				<div class="p2">
+					<img onclick="open_gallery(this)" src="img/armor.png">
+					<div> Armor </div>
+				</div>
+				<div class="p1">
+					<div> Items </div>
+					<img onclick="open_gallery(this)" src="img/items_1.png">
+				</div>
+				<div class="p2">
+					<img onclick="open_gallery(this)" src="img/drinks.png">
+					<div> Drinks </div>
+				</div>
+				<div class="p1">
+					<div> Accessories </div>
+					<img onclick="open_gallery(this)" src="img/accessories.png">
+				</div>
+				<div class="p2">
+					<img onclick="open_gallery(this)" src="img/mana_bar_1.png">
+					<div> Mana Bar </div>
+				</div>
+				<div class="p1">
+					<div> Mana Bar </div>
+					<img onclick="open_gallery(this)" src="img/mana_bar_2.png">
+				</div>
+				<div class="p2">
+					<img onclick="open_gallery(this)" src="img/crystals.png">
+					<div> Crystals </div>
+				</div>
+				<div class="p1">
+					<div> Items </div>
+					<img onclick="open_gallery(this)" src="img/items_2.png">
+				</div>
+				<div class="p2">
+					<img onclick="open_gallery(this)" src="img/staffs.png">
+					<div> Staffs </div>
 				</div>
 			</main>
 			<footer class="footer">
@@ -65,6 +120,16 @@
 					</a>
 				</div>
 			</footer>
+
+			<script>
+                function open_gallery(img) {
+                    document.getElementById("gallery").classList.add("opened");
+                    document.getElementById("gallery_img").src = img.src;
+				}
+                function close_gallery() {
+                    document.getElementById("gallery").classList.remove("opened");
+                }
+			</script>
 		</div>
 	</body>
 </html>
