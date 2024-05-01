@@ -103,6 +103,7 @@ img {
 
 .gallery_img {
 	z-index: 3;
+	max-width: 95%;
 }
 
 .p1, .p2 {
@@ -131,6 +132,10 @@ img {
 
 .p1 {
 	background-color: rgb(0, 0, 0, 0.25);
+}
+
+.p2 .p_top_text {
+	display: none;
 }
 
 
@@ -201,4 +206,92 @@ img {
 .flink_text {
 	padding-left: 10px;
 	font-size: 18px;
+}
+
+
+@media (max-width: 1200px) {
+	.p1, .p2 {
+		padding: 40px 140px 40px 140px;
+	}
+}
+
+@media (max-width: 960px) {
+	.p1, .p2 {
+		padding: 40px 70px 40px 70px;
+		font-size: 40px;
+	}
+
+	.p1 img, .p2 img {
+		max-height: 240px;
+		max-width: 350px;
+		border-radius: 10px;
+	}
+}
+
+@media (max-width: 720px) {
+	.header_avatar {
+		height: 40px;
+	}
+
+	.header_b {
+		font-size: 20px;
+	}
+
+	.profile_nickname {
+		font-size: 40px;
+	}
+
+	.profile_des {
+		font-size: 25px;
+	}
+
+	.p1, .p2 {
+		display: block;
+		padding: 30px 20px 30px 20px;
+		font-size: 40px;
+		text-align: center;
+		min-height: 0px;
+	}
+
+	.p2 .p_bottom_text {
+		display: none;
+	}
+
+	.p2 .p_top_text {
+		display: block;
+	}
+
+	.p1 img, .p2 img {
+		max-height: 240px;
+		max-width: 350px;
+		border-radius: 10px;
+		margin-top: 5px;
+	}
+
+	.title_text {
+		font-size: 32px;
+	}
+
+	.s_avatar {
+		height: 40px;
+	}
+
+	.store {
+		flex-direction: column;
+		align-items: center;
+		margin: 20px 0 20px 0;
+	}
+
+	.s_item {
+		min-width: 240px;
+		width: auto;
+	}
+
+	.flink_icon {
+		height: 35px;
+	}
+
+	.flink_text {
+		font-size: 16px;
+	}
 }
