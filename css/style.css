@@ -1,32 +1,33 @@
-*{
+* {
 	padding: 0;
 	margin: 0;
 	font-family: Ubuntu;
 	transition: 0.25s;
+	color: white;
 }
-a{
-    text-decoration: none
+
+a {
+	text-decoration: none
 }
-.line{
-	margin: 30px 100px 30px 100px;
-	background: linear-gradient(90deg, #324459, #475D6D);
-	height: 2px;
-}
-.no_select,
-.header_icon,
-.translate_flag,
-.logo_img,
-.links_image,
-.member_avatar,
-.ktc_smoke,
-.avatar_foxplane{
+
+img {
+	-webkit-user-select: none;
+	-ms-user-select: none;
 	user-select: none;
 }
-.body{
+
+.body {
 	background: #21273C;
 }
 
-.header{
+.page {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.header {
 	position: fixed;
 	width: 100%;
 	background: black;
@@ -37,101 +38,103 @@ a{
 	box-shadow: 0 0 20px black;
 	z-index: 1;
 }
-.header_div{
+
+.header_div {
 	display: flex;
 	align-items: center;
 }
-.header_links{
+
+.header_links {
 	display: flex;
 	padding: 12px;
 }
-.header_icon{
+
+.header_icon {
 	height: 64px;
 }
-.header_button{
+
+.header_b {
 	padding: 6px 16px 6px 16px;
 	margin: 0px 5px 0px 5px;
-	color: white;
 	display: flex;
 	align-items: center;
 	font-size: 22px;
 	border-radius: 50px;
 	background: black;
 }
-.translate{
+
+.header_b:hover {
+	color: black;
+	background: white;
+	box-shadow: 0 0 20px rgb(255, 255, 255, 0.25);
+}
+
+.translate {
 	margin: 0px 30px 0px 5px;
 }
-.translate_flag{
+
+.translate_flag {
 	padding: 0px 10px 0px 5px;
 	height: 25px;
 }
-.header_button:hover{
-	color: black;
-	background: white;
-}
 
-.page{
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	overflow: hidden;
-}
-.logo{
+.logo {
 	margin-top: 88px;
 	background: url(../img/header_ktc_studios.png);
 	background-size: cover;
-	background-position: bottom;
+	background-position: center;
 	display: flex;
 	justify-content: center;
+	box-shadow: 0px -120px 20px -120px black inset;
 }
-.logo_div{
+
+.logo_div {
 	display: flex;
-	padding-bottom: 40px;
 }
-.logo_img{
+
+.logo_img {
 	margin: 60px 40px 80px 120px;
 	height: 300px;
 }
-.logo_img.shadow{
+
+.logo_img.shadow {
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
 }
-.logo_title{
+
+.logo_img.bradius {
+	border-radius: 10px;
+}
+
+.logo_title {
 	background: linear-gradient(135deg, #1B1D33, #170F2B);
 	border-radius: 20px;
 	margin: auto 100px auto 50px;
 	padding: 20px;
 }
-.logo.its_autumn{
+
+.logo.its_autumn {
 	background: url(../img/header_its_autumn.png);
-	background-size: cover;
-	background-position: bottom;
-}
-.logo.goddaamntowerdefense{
-	background: url(../img/header_goddaamn_tower_defense.png);
-	background-size: cover;
-	background-position: bottom;
 }
 
-.title,
-.description{
-	color: white;
+.logo.goddaamntowerdefense {
+	background: url(../img/header_goddaamn_tower_defense.png);
+}
+
+.title, .description {
 	padding: 10px 30px 10px 30px;
 	font-family: Russo One;
+	text-align: center;
 }
-.title{
+
+.title {
 	font-size: 38px;
 }
-.description{
+
+.description {
 	font-size: 24px;
 }
 
-.section,
-.section_game_description,
-.links{
-	color: white;
-}
-.section,
-.section_game_description{
+.section {
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
@@ -141,29 +144,24 @@ a{
 	margin: 20px 100px 20px 100px;
 	align-items: center;
 }
-.section_main{
-	display: flex;
-	align-items: center;
-}
 
-.links{
+.links {
 	display: flex;
 	justify-content: center;
-	margin: 20px 30px 20px 30px;
+	margin: 30px;
 }
-.links_text{
+
+.links_text {
 	font-size: 32px;
-	color: white;
 	margin: 10px 15px 10px 10px;
 }
-.links_image{
+
+.links img {
 	margin: 10px;
 	height: 50px;
 }
-.links_image.scale_game{
-	height: 40px;
-}
-.links_button{
+
+.links_b {
 	padding: 5px 30px 5px 30px;
 	margin: 0px 10px 0px 10px;
 	border-radius: 100px;
@@ -173,51 +171,143 @@ a{
 	align-items: center;
 }
 
-.links_button.black{
+.links_b.black {
 	background: #0C0C0C;
 }
-.links_button.black:hover{
+
+.links_b.black:hover {
 	background: black;
 }
-.links_button.discord_server{
+
+.links_b.discord_server {
 	background: #5662F6;
 }
-.links_button.discord_server:hover{
+
+.links_b.discord_server:hover {
 	background: #4242E5;
 }
-.links_button:hover,
-.member_link:hover,
-.game_link:hover{
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+
+.links_b:hover,
+.bio_link:hover {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+	transform: translate(0, -10px);
 }
 
+.bio_0, .bio_1 {
+	display: flex;
+	text-align: center;
+	padding: 20px 200px;
+	align-items: center;
+}
 
-.name,
-.member_avatar{
-	padding: 10px;
-	font-size: 30px;
+.bio_0 {
+	background: linear-gradient(135deg, #1B1D33, #170F2B);
+	justify-content: left;
+}
+
+.bio_1 {
+	background: linear-gradient(135deg, #2C394F, #21273C);
+	justify-content: right;
+}
+
+.bio_avatar_0 {
+	transform: rotate(-8deg);
+	margin: 10px 40px 10px 10px;
+}
+
+.bio_name {
+	font-size: 26px;
 	font-family: Russo One;
-	text-align: left;
+	margin: 10px;
 }
-.member_avatar,
-.game_icon{
-	width: 240px;
-	border-radius: 20px;
-	user-select: none;
-	background-color: #170F2B;
+
+.bio_des {
+	font-size: 20px;
 }
-.member_description{
+
+.bio_avatar_1 {
+	transform: rotate(8deg);
+	margin: 10px 10px 10px 40px;
+}
+
+.bio_links {
+	display: flex;
+}
+
+.bio_link {
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bio_link img {
+	margin: 10px;
+}
+
+.bio_link.p1 {
+	position: relative;
+	top: 110px;
+	left: -30px;
+}
+
+.bio_link.p2 {
+	position: relative;
+	top: 30px;
+	left: -60px;
+}
+
+.bio_link.p3 {
+	position: relative;
+	top: 0px;
+	left: -30px;
+}
+
+.bio_link.youtube {
+	background: red;
+}
+.bio_link.youtube:hover {
+	background: #B20312;
+}
+.bio_link.discord {
+	background: #5662F6;
+}
+.bio_link.discord:hover {
+	background: #4242E5;
+}
+.bio_link.gamejolt {
+	background: #2F7F6F;
+}
+.bio_link.gamejolt:hover {
+	background: #0F5B52;
+}
+.bio_link.itch_io {
+	background: #FF5F5F;
+}
+.bio_link.itch_io:hover {
+	background: #CC434E;
+}
+.bio_link.empty {
+	height: 50px;
+	width: 50px;
+}
+
+
+
+
+.member_description {
 	text-align: left;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 10px 30px 10px 30px;
-	font-size: 20px;
 }
-.member_links{
+
+.member_links {
 	margin: 20px;
 }
-.member_link{
+
+.member_link {
 	border-radius: 100px;
 	text-align: center;
 	display: flex;
@@ -225,43 +315,11 @@ a{
 	align-items: center;
 	margin: 10px;
 }
-.member_link.youtube{
-	background: red;
-}
-.member_link.youtube:hover{
-	background: #B20312;
-}
-.member_link.discord{
-	background: #5662F6;
-}
-.member_link.discord:hover{
-	background: #4242E5;
-}
-.member_link.gamejolt{
-	background: #2F7F6F;
-}
-.member_link.gamejolt:hover{
-	background: #0F5B52;
-}
-.member_link.itch_io{
-	background: #FF5F5F;
-}
-.member_link.itch_io:hover{
-	background: #CC434E;
-}
-.empty{
-	width: 75px;
-	height: 75px;
-	margin: 10px;
-}
 
 
-.game,
-.section_game_description{
-	padding: 20px;
-	display: flex;
-}
-.game_link{
+
+
+.game_link {
 	padding: 5px 20px 5px 20px;
 	margin: 0 10px;
 	border-radius: 100px;
@@ -270,91 +328,107 @@ a{
 	justify-content: center;
 	align-items: center;
 }
-.lol{
+
+.lol {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	margin-left: 10px;
 }
-.game_link.download{
+
+.game_link.download {
 	background: #0C0C0C;
 }
-.game_link.download:hover{
+
+.game_link.download:hover {
 	background: black;
 }
-.game_link.itch_io{
+
+.game_link.itch_io {
 	background: #FF5F5F;
 }
-.game_link.itch_io:hover{
+
+.game_link.itch_io:hover {
 	background: #CC434E;
 }
-.game_description{
+
+.game_description {
 	text-align: left;
 	margin: 10px;
 	font-size: 20px;
 }
-.game_version{
+
+.game_version {
 	text-align: left;
 	margin: 10px 10px 30px 10px;
 	font-size: 16px;
 }
-.game_version_page{
+
+.game_version_page {
 	text-align: left;
 	margin: 20px 10px 10px 10px;
 	font-size: 16px;
 }
 
 
-#r1:checked ~ .s1{
+#r1:checked ~ .s1 {
 	margin-left: 0;
 }
-#r2:checked ~ .s1{
+
+#r2:checked ~ .s1 {
 	margin-left: -20%;
 }
-#r3:checked ~ .s1{
+
+#r3:checked ~ .s1 {
 	margin-left: -40%;
 }
-#r4:checked ~ .s1{
+
+#r4:checked ~ .s1 {
 	margin-left: -60%;
 }
-#r5:checked ~ .s1{
+
+#r5:checked ~ .s1 {
 	margin-left: -80%;
 }
 
 
-.screenshot{
+.screenshot {
 	width: 20%;
 }
-.slides{
+
+.slides {
 	width: 500%;
 	height: 100%;
 	display: flex;
 }
 
-.section_screenshots{
+.section_screenshots {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
-.screenshots{
+
+.screenshots {
 	width: 800px;
 	height: 420px;
 	border-radius: 10px;
 	overflow: hidden;
 }
-.screenshot img{
+
+.screenshot img {
 	width: 100%;
 	height: 100%;
-	user-select: none;
 }
-.screenshots_nav{
+
+.screenshots_nav {
 	display: flex;
 	justify-content: center;
 	position: relative;
 	margin: 5px;
 }
-.sc_nav_bar{
+
+.sc_nav_bar {
 	width: 50px;
 	height: 15px;
 	margin: 5px;
@@ -362,358 +436,411 @@ a{
 	background-color: #1B1D33;
 	border-radius: 5px;
 }
-.sc_nav_bar:hover{
+
+.sc_nav_bar:hover {
 	background-color: #170F2B;
 	box-shadow: 0 0 7.5px rgba(0, 0, 0, 0.5);
 }
-input[name="r"]{
+
+input[name="r"] {
 	position: absolute;
 	visibility: hidden;
 }
 
 
-.changelog{
+.changelog {
 	padding: 20px;
 	text-align: left;
 	flex-direction: column;
 	align-items: normal;
 }
-.ch_content{
+
+.ch_content {
 	margin: 5px 10px 5px 10px;
 }
-.ch_content.title{
+
+.ch_content.title {
 	padding: 0;
 	text-align: center;
 }
-.ch_content.cur_ver{
+
+.ch_content.cur_ver {
 	font-family: Russo One;
 	font-size: 28px;
 	margin-top: 20px;
 }
-.ch_content.ver{
+
+.ch_content.ver {
 	font-family: Russo One;
 	font-size: 20px;
 	margin-top: 20px;
 }
-.ch_content.content{
+
+.ch_content.content {
 	font-size: 20px;
 }
 
 
-.footer{
-	background: black; 
+.footer {
+	background: black;
 	font-size: 20px;
-	color: gray;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-top: auto;
 }
-.copyright{
+
+.copyright {
 	position: absolute;
 	right: 30px;
+	color: gray;
 }
 
-
-.section_no_bg{
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	margin: 20px 100px 20px 100px;
-	align-items: center;
-}
-.foxplane{
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	padding: 10px;
-	background: linear-gradient(135deg, #1B1D33, #170F2B);
-	border-radius: 20px;
-	margin: 0 100px 0 100px;
-	align-items: center;
+.copyright:hover {
 	color: white;
-}
-.name_foxplane{
-	padding: 5px 0 5px 0;
-	font-size: 20px;
-	font-family: Russo One;
-}
-.avatar_foxplane{
-	padding-top: 5px;
-	width: 130px;
-}
-.description_foxplane{
-	padding: 10px 20px 10px 10px;
 }
 
 
 @media (max-width: 960px) {
-	.logo_img{
+	.logo_img {
 		margin: 40px 40px 40px 120px;
 		height: 200px;
 	}
-	.title{
+
+	.title {
 		font-size: 30px;
 	}
-	.description{
+
+	.description {
 		font-size: 18px;
 	}
-	.member_links{
+
+	.member_links {
 		margin: 0px 5px 0px 5px;
 	}
-	.name{
+
+	.name {
 		padding: 10px;
 		font-size: 26px;
 	}
-	.member_description{
+
+	.member_description {
 		padding: 0px 10px 0px 10px;
 		font-size: 18px;
 	}
-	.game_description{
+
+	.game_description {
 		font-size: 18px;
 	}
-	.game_version{
+
+	.game_version {
 		font-size: 15px;
 	}
+
 	.member_avatar,
-	.game_icon{
+	.game_icon {
 		width: 200px;
 	}
-	.screenshots{
+
+	.screenshots {
 		width: 600px;
 		height: 315px;
 	}
-	.ch_content.cur_ver{
+
+	.ch_content.cur_ver {
 		font-size: 26px;
 	}
-	.ch_content.ver{
+
+	.ch_content.ver {
 		font-size: 18px;
 	}
-	.ch_content.content{
+
+	.ch_content.content {
 		font-size: 18px;
 	}
-	.links_image.scale{
+
+	.links_image.scale {
 		height: 40px;
 	}
-	.links_image.scale_games{
+
+	.links_image.scale_games {
 		height: 35px;
 		margin: 7.5px;
 	}
-	.links_text.scale{
+
+	.links_text.scale {
 		font-size: 26px;
 	}
 }
+
 @media (max-width: 720px) {
-	.header_icon{
+	.header_icon {
 		height: 48px;
 	}
-	.header_button{
+
+	.header_button {
 		padding: 6px 16px 6px 16px;
 		font-size: 18px;
 	}
-	.translate_flag{
+
+	.translate_flag {
 		height: 20px;
 	}
-	.logo{
+
+	.logo {
 		margin-top: 75px;
 	}
-	.logo_div{
+
+	.logo_div {
 		flex-direction: column;
 		align-items: center;
 		padding: 0;
 	}
-	.logo_title{
+
+	.logo_title {
 		margin: 10px 50px 80px 50px;
 		padding: 10px;
 	}
-	.logo_img{
+
+	.logo_img {
 		margin: 30px 20px 10px 20px;
 	}
-	.title{
+
+	.title {
 		font-size: 26px;
 	}
-	.description{
+
+	.description {
 		font-size: 16px;
 	}
+
 	.title,
-	.description{
-		    padding: 10px 20px 10px 20px;
+	.description {
+		padding: 10px 20px 10px 20px;
 	}
-	.links{
+
+	.links {
 		flex-direction: column;
 		align-items: center;
 	}
-	.links_button.our_games{
+
+	.links_button.our_games {
 		margin: 0px 0px 10px 0px;
 		width: 220px;
 	}
-	.links_button.discord_server{
+
+	.links_button.discord_server {
 		margin: 10px 0px 0px 0px;
 		width: 220px;
 	}
-	.android{
+
+	.android {
 		margin-top: 10px;
 	}
-	.section{
+
+	.section {
 		flex-direction: column;
 		align-items: center;
 		margin: 10px 40px 10px 40px;
 	}
-	.section_main{
+
+	.section_main {
 		flex-direction: column;
 	}
-	.section_game_description{
+
+	.section_game_description {
 		flex-direction: column;
 		align-items: normal;
 		margin: 10px 40px 10px 40px;
 	}
-	.changelog{
+
+	.changelog {
 		align-items: normal;
 	}
-	.empty{
+
+	.empty {
 		display: none;
 	}
-	.member_links{
+
+	.member_links {
 		display: flex;
 	}
-	.name{
+
+	.name {
 		font-size: 20px;
 		text-align: center;
 	}
-	.member_description{
+
+	.member_description {
 		padding: 10px 20px 10px 20px;
 		font-size: 14px;
 	}
-	.game_description{
+
+	.game_description {
 		font-size: 15px;
 	}
-	.game_version{
+
+	.game_version {
 		font-size: 13px;
 	}
+
 	.member_avatar,
-	.game_icon{
+	.game_icon {
 		width: 150px;
 	}
-	.ch_content.cur_ver{
+
+	.ch_content.cur_ver {
 		font-size: 22px;
 	}
-	.ch_content.ver{
+
+	.ch_content.ver {
 		font-size: 15px;
 	}
-	.ch_content.content{
+
+	.ch_content.content {
 		font-size: 15px;
 	}
-	.screenshots{
+
+	.screenshots {
 		width: 400px;
 		height: 210px;
 	}
-	.links_image{
+
+	.links_image {
 		height: 40px;
 		margin: 7.5px;
 	}
-	.links_text{
+
+	.links_text {
 		font-size: 22px;
 		margin: 7.5px;
 	}
-	.links_image.scale{
+
+	.links_image.scale {
 		height: 30px;
 	}
-	.links_image.scale_games{
+
+	.links_image.scale_games {
 		height: 30px;
 		margin: 5px;
 	}
-	.links_text.scale{
+
+	.links_text.scale {
 		font-size: 22px;
 		margin: 7.5px;
 	}
-	.footer{
+
+	.footer {
 		justify-content: left;
 	}
-	.copyright{
+
+	.copyright {
 		font-size: 16px;
 	}
-	
-	.name_foxplane{
+
+	.name_foxplane {
 		padding: 5px 0 5px 0;
 		font-size: 16px;
 		font-family: Russo One;
 	}
-	.avatar_foxplane{
+
+	.avatar_foxplane {
 		padding-top: 5px;
 		width: 100px;
 	}
-	.description_foxplane{
+
+	.description_foxplane {
 		padding: 10px 20px 10px 10px;
 		font-size: 14px;
 	}
 }
+
 @media (max-width: 600px) {
-	.logo_img{
+	.logo_img {
 		height: 150px;
 		margin: 20px 20px 10px 20px;
 	}
-	.logo_title{
+
+	.logo_title {
 		margin: 10px 50px 60px 50px;
 	}
-	.header_links{
+
+	.header_links {
 		padding: 12px 4px 12px 4px;
 	}
-	.header_button.main{
+
+	.header_button.main {
 		padding: 6px 12px 6px 12px;
 	}
-	.header_button.translate{
+
+	.header_button.translate {
 		padding: 7.5px 12px 7.5px 12px;
 	}
 }
+
 @media (max-width: 380px) {
-	.header{
+	.header {
 		padding: 8px;
 	}
-	.logo{
+
+	.logo {
 		margin-top: 70px;
 	}
-	.title{
+
+	.title {
 		font-size: 22px;
 	}
-	.description{
+
+	.description {
 		font-size: 12px;
 	}
-	.header_links{
+
+	.header_links {
 		padding: 16px 0px 16px 0px;
 	}
-	.header_icon{
+
+	.header_icon {
 		height: 50px;
 	}
-	.header_button{
+
+	.header_button {
 		padding: 4px 8px 4px 8px;
 		font-size: 16px;
 	}
-	.translate_flag{
+
+	.translate_flag {
 		padding: 0px 10px 0px 2px;
 		height: 15px;
 	}
-	.logo_img{
+
+	.logo_img {
 		height: 130px;
 	}
-	.logo_title{
+
+	.logo_title {
 		margin: 10px 50px 50px 50px;
 	}
-	.screenshots{
+
+	.screenshots {
 		width: 300px;
 		height: 160px;
 	}
-	.links_image{
+
+	.links_image {
 		height: 40px;
 	}
-	.links_button.our_games{
+
+	.links_button.our_games {
 		margin: 0px 0px 10px 0px;
 		width: 210px;
 	}
-	.links_button.discord_server{
+
+	.links_button.discord_server {
 		margin: 10px 0px 0px 0px;
 		width: 210px;
 	}
-	.links_text{
+
+	.links_text {
 		font-size: 20px;
 		margin: 7.5px;
 	}
