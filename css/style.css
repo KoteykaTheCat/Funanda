@@ -44,13 +44,13 @@ img {
 	align-items: center;
 }
 
+.header_icon {
+	height: 64px;
+}
+
 .header_links {
 	display: flex;
 	padding: 12px;
-}
-
-.header_icon {
-	height: 64px;
 }
 
 .header_b {
@@ -71,6 +71,7 @@ img {
 
 .translate {
 	margin: 0px 30px 0px 5px;
+	display: none;
 }
 
 .translate_flag {
@@ -88,6 +89,18 @@ img {
 	box-shadow: 0px -120px 20px -120px black inset;
 }
 
+.logo.its_autumn {
+	background: url(../img/header_its_autumn.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.logo.goddaamntowerdefense {
+	background: url(../img/header_goddaamn_tower_defense.png);
+	background-size: cover;
+	background-position: center;
+}
+
 .logo_div {
 	display: flex;
 }
@@ -98,11 +111,11 @@ img {
 }
 
 .logo_img.shadow {
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.75);
 }
 
-.logo_img.bradius {
-	border-radius: 10px;
+.logo_img.border {
+	border-radius: 15px;
 }
 
 .logo_title {
@@ -110,14 +123,7 @@ img {
 	border-radius: 20px;
 	margin: auto 100px auto 50px;
 	padding: 20px;
-}
-
-.logo.its_autumn {
-	background: url(../img/header_its_autumn.png);
-}
-
-.logo.goddaamntowerdefense {
-	background: url(../img/header_goddaamn_tower_defense.png);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.75);
 }
 
 .title, .description {
@@ -135,14 +141,10 @@ img {
 }
 
 .section {
-	display: flex;
-	justify-content: space-between;
-	text-align: center;
-	padding: 10px;
+	padding: 20px;
 	background: linear-gradient(135deg, #1B1D33, #170F2B);
 	border-radius: 20px;
 	margin: 20px 100px 20px 100px;
-	align-items: center;
 }
 
 .links {
@@ -151,19 +153,14 @@ img {
 	margin: 30px;
 }
 
-.links_text {
+.link_text {
 	font-size: 32px;
 	margin: 10px 15px 10px 10px;
 }
 
-.links img {
-	margin: 10px;
-	height: 50px;
-}
-
-.links_b {
-	padding: 5px 30px 5px 30px;
-	margin: 0px 10px 0px 10px;
+.link_b {
+	padding: 5px 30px;
+	margin: 0px 20px;
 	border-radius: 100px;
 	text-align: center;
 	display: flex;
@@ -171,23 +168,35 @@ img {
 	align-items: center;
 }
 
-.links_b.black {
+.link_b:hover {
+	cursor: pointer;
+}
+
+.link_b img {
+	margin: 10px;
+	height: 50px;
+}
+
+.link_b.black {
 	background: #0C0C0C;
 }
-
-.links_b.black:hover {
+.link_b.black:hover {
 	background: black;
 }
-
-.links_b.discord_server {
+.link_b.discord_server {
 	background: #5662F6;
 }
-
-.links_b.discord_server:hover {
+.link_b.discord_server:hover {
 	background: #4242E5;
 }
+.link_b.itch_io {
+	background: #FF5F5F;
+}
+.link_b.itch_io:hover {
+	background: #CC434E;
+}
 
-.links_b:hover,
+.link_b:hover,
 .bio_link:hover {
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 	transform: translate(0, -10px);
@@ -239,6 +248,7 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 2;
 }
 
 .bio_link img {
@@ -292,83 +302,47 @@ img {
 	width: 50px;
 }
 
+.game_name {
+	font-size: 26px;
+	font-family: Russo One;
+	margin-bottom: 10px;
+}
 
-
-
-.member_description {
-	text-align: left;
+.game_content {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 10px 30px 10px 30px;
 }
 
-.member_links {
-	margin: 20px;
+.game_icon {
+	border-radius: 10px;
+	background-color: #170F2B;
 }
 
-.member_link {
-	border-radius: 100px;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 10px;
-}
-
-
-
-
-.game_link {
-	padding: 5px 20px 5px 20px;
-	margin: 0 10px;
-	border-radius: 100px;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.lol {
+.game_info {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	margin-left: 10px;
+
 }
 
-.game_link.download {
-	background: #0C0C0C;
+.game_des {
+	margin: 0 0 10px 20px;
+	font-size: 22px;
 }
 
-.game_link.download:hover {
-	background: black;
-}
-
-.game_link.itch_io {
-	background: #FF5F5F;
-}
-
-.game_link.itch_io:hover {
-	background: #CC434E;
-}
-
-.game_description {
+.game_ver {
 	text-align: left;
-	margin: 10px;
-	font-size: 20px;
-}
-
-.game_version {
-	text-align: left;
-	margin: 10px 10px 30px 10px;
+	margin: 10px 0 30px 20px;
 	font-size: 16px;
 }
 
-.game_version_page {
-	text-align: left;
-	margin: 20px 10px 10px 10px;
-	font-size: 16px;
+.game_des.pg {
+	margin: 0 10px 10px 10px;
 }
+
+.game_ver.pg {
+	margin: 0 10px;
+}
+
 
 
 #r1:checked ~ .s1 {
@@ -394,6 +368,10 @@ img {
 
 .screenshot {
 	width: 20%;
+}
+
+.screenshot:hover {
+	cursor: pointer;
 }
 
 .slides {
@@ -425,12 +403,12 @@ img {
 	display: flex;
 	justify-content: center;
 	position: relative;
-	margin: 5px;
+	margin: 15px 15px 0 15px;
 }
 
 .sc_nav_bar {
 	width: 50px;
-	height: 15px;
+	height: 20px;
 	margin: 5px;
 	cursor: pointer;
 	background-color: #1B1D33;
@@ -439,7 +417,8 @@ img {
 
 .sc_nav_bar:hover {
 	background-color: #170F2B;
-	box-shadow: 0 0 7.5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	transform: translate(0, -5px);
 }
 
 input[name="r"] {
@@ -447,16 +426,70 @@ input[name="r"] {
 	visibility: hidden;
 }
 
+.gallery {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(0, 0, 0, 0.5);
+	z-index: 3;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.125s;
+}
+
+.gallery.opened {
+	visibility: visible;
+	opacity: 1;
+}
+
+.gallery_img {
+	z-index: 3;
+	max-width: 95%;
+	transform: scale(0.5);
+}
+
+.gallery.opened .gallery_img {
+	transform: scale(1);
+}
 
 .changelog {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(0, 0, 0, 0.5);
 	padding: 20px;
 	text-align: left;
-	flex-direction: column;
-	align-items: normal;
+	overflow-y: auto;
+	z-index: 3;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.changelog.opened {
+	visibility: visible;
+	opacity: 1;
+}
+
+#changelog_b {
+	display: none;
+}
+
+.changelog .section {
+	margin: 30px 100px 50px 100px;
 }
 
 .ch_content {
-	margin: 5px 10px 5px 10px;
+	margin: 0 10px 10px 10px;
 }
 
 .ch_content.title {

@@ -1,209 +1,248 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<link rel="icon" href="../../img/icon.svg" type="image/png">
-		<link rel="stylesheet" href="../../css/style.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Ubuntu&display=swap" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="og:image" content="https://raw.githubusercontent.com/KoteykaTheCat/ktcstudios/main/img/og_its_autumn.png">
-		<meta name="twitter:image" content="https://raw.githubusercontent.com/KoteykaTheCat/ktcstudios/main/img/og_its_autumn.png">
-		<meta property="twitter:card" content="summary_large_image">
-		<meta property="og:site_name" content="KTC Studios">
-		
-		<title> KTC Studios - It's Autunm </title>
-		<meta property="og:locale" content="ru">
-		<meta name="og:title" content="KTC Studios - It's Autumn">
-		<meta name="og:description" content="Вайбовая и атмосферная (почти) игра про осень. Квартира, подъезд, двор, гиганский ананас и волшебный кубик на пятом этаже">
-		<meta name="description" content="Вайбовая и атмосферная (почти) игра про осень. Квартира, подъезд, двор, гиганский ананас и волшебный кубик на пятом этаже">
-		<meta name="og:url" content="https://koteykathecat.github.io/ktcstudios/games/itsautumn">
-		<meta property="og:keywords" content="its autumn, it's autumn">
-	</head>
-	
-	<body class="body">
-		<div class="page">
-			<header class="header">
-				<div class="header_div">
-					<img class="header_icon" src="../../img/icon.svg">
-					<div class="header_links">
-						<a class="header_button main" href="../../"> Главная </a>
-						<a class="header_button main" href="../"> Игры </a>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="../../img/icon.svg" type="image/png">
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Ubuntu&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:site_name" content="KTC Studios">
+
+	<title> KTC Studios - It's Autunm </title>
+	<meta name="description" content="Вайбовая и атмосферная (почти) игра про осень. Квартира, подъезд, двор, гиганский ананас и волшебный кубик на пятом этаже">
+	<meta name="author" content="KoteykaTheCat">
+	<meta name="keywords" content="its autumn, it's autumn, осень">
+
+	<meta property="og:title" content="KTC Studios - It's Autunm">
+	<meta property="og:locale" content="ru">
+	<meta property="og:description" content="Вайбовая и атмосферная (почти) игра про осень. Квартира, подъезд, двор, гиганский ананас и волшебный кубик на пятом этаже">
+	<meta property="og:keywords" content="its autumn, it's autumn, осень">
+	<meta property="og:image" content="https://raw.githubusercontent.com/KoteykaTheCat/ktcstudios/main/img/og_its_autumn.png">
+	<meta property="og:url" content="https://koteykathecat.github.io/ktcstudios/games/itsautumn">
+
+	<meta property="twitter:image" content="https://raw.githubusercontent.com/KoteykaTheCat/ktcstudios/main/img/og_its_autumn.png">
+	<meta property="twitter:card" content="summary_large_image">
+</head>
+
+<body class="body">
+	<div class="page">
+		<header class="header">
+			<div class="header_div">
+				<img class="header_icon" src="../../img/icon.svg" alt="">
+				<div class="header_links">
+					<a class="header_b main" href="../../"> Главная </a>
+					<a class="header_b main" href="../"> Игры </a>
+				</div>
+			</div>
+			<a class="header_b translate" href="../../en/games/itsautumn">
+				<img class="translate_flag" src="../../img/icon_en.svg" alt=""> Eng
+			</a>
+		</header>
+		<main class="content">
+			<section class="logo its_autumn">
+				<div class="logo_div">
+					<img class="logo_img border shadow" src="../../img/icon_its_autumn.png" alt="">
+					<div class="logo_title">
+						<div class="title"> It's Autumn </div>
 					</div>
 				</div>
-				<a class="header_button translate" href="../../en/games/itsautumn">
-					<img class="translate_flag" src="../../img/icon_en.svg"> Eng
+			</section>
+
+			<section class="section">
+				<div>
+					<div class="game_des pg">
+						Вайбовая и атмосферная (почти) игра про осень. Квартира, подъезд, двор, гиганский ананас и волшебный кубик на пятом этаже
+					</div>
+					<div class="game_des pg">
+						Это версия <span style="color: crimson"> Dev! </span> В ней нет всех механик, интерактива и т.д.
+					</div>
+					<div class="game_ver pg">
+						Версия: Dev 0.0.0.9 <br>
+						Дата обновления: 15 февраля 2024 <br>
+						Дата выхода: 25 ноября 2023
+					</div>
+				</div>
+			</section>
+
+			<section class="section_screenshots">
+				<div class="gallery" id="gallery" onclick="close_gallery()">
+					<img class="gallery_img" src="img/items_1.png" id="gallery_img">
+				</div>
+
+				<div class="screenshots">
+					<div class="slides">
+						<input type="radio" name="r" id="r1" checked>
+						<input type="radio" name="r" id="r2">
+						<input type="radio" name="r" id="r3">
+						<input type="radio" name="r" id="r4">
+						<input type="radio" name="r" id="r5">
+
+						<div class="screenshot s1"><img src="../../img/screen_its_autumn_0.png" onclick="open_gallery(this)"></div>
+						<div class="screenshot"><img src="../../img/screen_its_autumn_1.png" onclick="open_gallery(this)"></div>
+						<div class="screenshot"><img src="../../img/screen_its_autumn_2.png" onclick="open_gallery(this)"></div>
+						<div class="screenshot"><img src="../../img/screen_its_autumn_3.png" onclick="open_gallery(this)"></div>
+						<div class="screenshot"><img src="../../img/screen_its_autumn_4.png" onclick="open_gallery(this)"></div>
+					</div>
+				</div>
+				<div class="screenshots_nav">
+					<label for="r1" class="sc_nav_bar"></label>
+					<label for="r2" class="sc_nav_bar"></label>
+					<label for="r3" class="sc_nav_bar"></label>
+					<label for="r4" class="sc_nav_bar"></label>
+					<label for="r5" class="sc_nav_bar"></label>
+				</div>
+			</section>
+
+			<section class="links">
+				<a class="link_b black" href="https://www.dropbox.com/scl/fi/jurw08g4hs55tc7ovinly/It-s-Autumn.zip?rlkey=cuntinjyqfdgp04ffg3cvycee&dl=1">
+					<img class="link_img" src="../../img/icon_windows.svg">
+					<div class="link_text"> Windows (106 Мб) </div>
 				</a>
-			</header>
-			<main class="content">
-				<section class="logo its_autumn">
-					<div class="logo_div">
-						<img class="logo_img shadow" src="../../img/icon_its_autumn.png">
-						<div class="logo_title">
-							<div class="title"> It's Autumn </div>
-						</div>
+				<a class="link_b black android" href="https://www.dropbox.com/scl/fi/kz1z68r8j0f1lzy9iuaev/It-s-Autumn.apk?rlkey=6b7rv3v076z1gd1qwc0ijx90x&dl=1">
+					<img class="link_img" src="../../img/icon_android.svg">
+					<div class="link_text"> Android (58 Мб) </div>
+				</a>
+			</section>
+
+			<section class="links">
+				<button id="changelog_b"></button>
+				<label class="link_b black" for="changelog_b">
+					<span class="link_text"> Изменения </span>
+				</label>
+			</section>
+
+			<section class="changelog" id="changelog">
+				<div class="section">
+					<div class="ch_content title"> Изменения </div>
+					<div class="ch_content cur_ver"> Dev 0.0.0.9 </div>
+					<div class="ch_content content">
+						Основное: <br>
+						• Фиксы багов
 					</div>
-				</section>
-				
-				<section class="section_game_description">
-					<div>
-						<div class="game_description">
-							Вайбовая и атмосферная (почти) игра про осень. Квартира, подъезд, двор, гиганский ананас и волшебный кубик на пятом этаже
-						</div>
-						<div class="game_description">
-							Это версия Dev! В ней нет всех механик, интерактива и т.д.
-						</div>
-						<div class="game_version_page">
-							Версия: Dev 0.0.0.9 <br>
-							Дата обновления: 15 февраля 2024 <br>
-							Дата выхода: 25 ноября 2023
-						</div>
+					<div class="ch_content content">
+						Мультиплеер: <br>
+						• Изменена модель игрока <br>
+						• Добавлена кастомизация игрока <br>
+						• Улучшены движения предметов и игроков
 					</div>
-				</section>
-				
-				<section class="section_screenshots">
-					<div class="screenshots">
-						<div class="slides">
-							<input type="radio" name="r" id="r1" checked>
-							<input type="radio" name="r" id="r2">
-							<input type="radio" name="r" id="r3">
-							<input type="radio" name="r" id="r4">
-							<input type="radio" name="r" id="r5">
-							
-							<div class="screenshot s1"><img src="../../img/screen_its_autumn_0.png"></div>
-							<div class="screenshot"><img src="../../img/screen_its_autumn_1.png"></div>
-							<div class="screenshot"><img src="../../img/screen_its_autumn_2.png"></div>
-							<div class="screenshot"><img src="../../img/screen_its_autumn_3.png"></div>
-							<div class="screenshot"><img src="../../img/screen_its_autumn_4.png"></div>
-						</div>
+
+					<div class="ch_content ver"> Dev 0.0.0.8 </div>
+					<div class="ch_content content">
+						Основное: <br>
+						• Фиксы багов
 					</div>
-					<div class="screenshots_nav">
-						<label for="r1" class="sc_nav_bar"></label>
-						<label for="r2" class="sc_nav_bar"></label>
-						<label for="r3" class="sc_nav_bar"></label>
-						<label for="r4" class="sc_nav_bar"></label>
-						<label for="r5" class="sc_nav_bar"></label>
+					<div class="ch_content content">
+						Мультиплеер: <br>
+						• Изменена система инвентаря <br>
+						• Предметы можно использовать
 					</div>
-				</section>
-				
-				<section class="links">
-					<a class="links_button black" href="https://www.dropbox.com/scl/fi/jurw08g4hs55tc7ovinly/It-s-Autumn.zip?rlkey=cuntinjyqfdgp04ffg3cvycee&dl=1">
-						<img class="links_image" src="../../img/icon_windows.svg">
-						<div class="links_text"> Windows (106 Мб) </div>
-					</a>
-					<a class="links_button black android" href="https://www.dropbox.com/scl/fi/kz1z68r8j0f1lzy9iuaev/It-s-Autumn.apk?rlkey=6b7rv3v076z1gd1qwc0ijx90x&dl=1">
-						<img class="links_image" src="../../img/icon_android.svg">
-						<div class="links_text"> Android (58 Мб) </div>
-					</a>
-				</section>
-				
-				<section class="section changelog">
-					<div>
-						<div class="ch_content title"> Изменения </div>
-						<div class="ch_content cur_ver"> Dev 0.0.0.9 </div>
-						<div class="ch_content content">
-							Основное: <br>
-							• Фиксы багов
-						</div>
-						<div class="ch_content content">
-							Мультиплеер: <br>
-							• Изменена модель игрока <br>
-							• Добавлена кастомизация игрока <br>
-							• Улучшены движения предметов и игроков
-						</div>
-						
-						<div class="ch_content ver"> Dev 0.0.0.8 </div>
-						<div class="ch_content content">
-							Основное: <br>
-							• Фиксы багов
-						</div>
-						<div class="ch_content content">
-							Мультиплеер: <br>
-							• Изменена система инвентаря <br>
-							• Предметы можно использовать
-						</div>
-						
-						<div class="ch_content ver"> Dev 0.0.0.7 </div>
-						<div class="ch_content content">
-							Основное: <br>
-							• Фиксы багов
-						</div>
-						<div class="ch_content content">
-							Мультиплеер: <br>
-							• Добавлен сервер "Фортнайт 3д" <br>
-							• Добавлена система инвентаря <br>
-							• Добавлены предметы для инвентаря
-						</div>
-						
-						<div class="ch_content ver"> Dev 0.0.0.6 </div>
-						<div class="ch_content content">
-							Основное: <br>
-							• Добавлено меню серверов мультиплеера <br>
-							• Добавлен второй сервер мультиплеера <br>
-							• Фиксы багов
-						</div>
-						
-						<div class="ch_content ver"> Dev 0.0.0.5 </div>
-						<div class="ch_content content">
-							Основное: <br>
-							• Фиксы багов
-						</div>
-						
-						<div class="ch_content ver"> Dev 0.0.0.4 </div>
-						<div class="ch_content content">
-							Основное: <br>
-							• Добавлен порт под андроид <br>
-							• Добавлены звуки <br>
-							• Добавлена часть интерьера <br>
-							• Добавлена возможность поворачивать предметы <br>
-							• Добавлен гигантский ананас <br>
-							• Фиксы багов
-						</div>
-						
-						<div class="ch_content ver"> Dev 0.0.0.3 </div>
-						<div class="ch_content content">
-							Основное: <br>
-							• Добавлен подъезд <br>
-							• Добавлена часть интерьера <br>
-							• Добавлен столб из кубов <br>
-							• Добавлена кнопка резета поля зрения, чувствительности и клавиш <br>
-							• Изменена система подбора предметов <br>
-							• Фиксы багов
-						</div>
-						<div class="ch_content content">
-							Мультиплеер: <br>
-							• Добавлены сообщения при подключении и отключении игроков <br>
-						</div>
-						
-						<div class="ch_content ver"> Dev 0.0.0.2 </div>
-						<div class="ch_content content">
-							Основное: <br>
-							• Добавлена квартира <br>
-							• Изменена система подбора предметов <br>
-							• Предметы можно отдалять и приближать на колесико мышки <br>
-							• Фиксы багов
-						</div>
-						<div class="ch_content content">
-							Мультиплеер: <br>
-							• Добавлен чат <br>
-							• Сглаживание приседания игрока
-						</div>
-						
-						<div class="ch_content ver"> Dev 0.0.0.1 </div>
-						<div class="ch_content content">
-							• Игра вышла
-						</div>
+
+					<div class="ch_content ver"> Dev 0.0.0.7 </div>
+					<div class="ch_content content">
+						Основное: <br>
+						• Фиксы багов
 					</div>
-				</section>
-			</main>
-			
-			<footer class="footer">				
-				<img class="ktc_smoke" src="https://raw.githubusercontent.com/KoteykaTheCat/ktcstudios/main/img/ktc_smoke.gif" height="100">
-				<div class="copyright">
-					© 2024 KTC Studios
+					<div class="ch_content content">
+						Мультиплеер: <br>
+						• Добавлен сервер "Фортнайт 3д" <br>
+						• Добавлена система инвентаря <br>
+						• Добавлены предметы для инвентаря
+					</div>
+
+					<div class="ch_content ver"> Dev 0.0.0.6 </div>
+					<div class="ch_content content">
+						Основное: <br>
+						• Добавлено меню серверов мультиплеера <br>
+						• Добавлен второй сервер мультиплеера <br>
+						• Фиксы багов
+					</div>
+
+					<div class="ch_content ver"> Dev 0.0.0.5 </div>
+					<div class="ch_content content">
+						Основное: <br>
+						• Фиксы багов
+					</div>
+
+					<div class="ch_content ver"> Dev 0.0.0.4 </div>
+					<div class="ch_content content">
+						Основное: <br>
+						• Добавлен порт под андроид <br>
+						• Добавлены звуки <br>
+						• Добавлена часть интерьера <br>
+						• Добавлена возможность поворачивать предметы <br>
+						• Добавлен гигантский ананас <br>
+						• Фиксы багов
+					</div>
+
+					<div class="ch_content ver"> Dev 0.0.0.3 </div>
+					<div class="ch_content content">
+						Основное: <br>
+						• Добавлен подъезд <br>
+						• Добавлена часть интерьера <br>
+						• Добавлен столб из кубов <br>
+						• Добавлена кнопка резета поля зрения, чувствительности и клавиш <br>
+						• Изменена система подбора предметов <br>
+						• Фиксы багов
+					</div>
+					<div class="ch_content content">
+						Мультиплеер: <br>
+						• Добавлены сообщения при подключении и отключении игроков <br>
+					</div>
+
+					<div class="ch_content ver"> Dev 0.0.0.2 </div>
+					<div class="ch_content content">
+						Основное: <br>
+						• Добавлена квартира <br>
+						• Изменена система подбора предметов <br>
+						• Предметы можно отдалять и приближать на колесико мышки <br>
+						• Фиксы багов
+					</div>
+					<div class="ch_content content">
+						Мультиплеер: <br>
+						• Добавлен чат <br>
+						• Сглаживание приседания игрока
+					</div>
+
+					<div class="ch_content ver"> Dev 0.0.0.1 </div>
+					<div class="ch_content content">
+						• Игра вышла
+					</div>
 				</div>
-			</footer>
-		</div>
-	</body>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<img class="ktc_smoke" src="https://raw.githubusercontent.com/KoteykaTheCat/ktcstudios/main/img/ktc_smoke.gif" height="100" alt="">
+			<a class="copyright" href="https://github.com/KoteykaTheCat/ktcstudios/blob/main/LICENSE.txt">
+				© 2024 KTC Studios
+			</a>
+		</footer>
+
+		<script>
+			function open_gallery(img) {
+                document.getElementById("gallery").classList.add("opened");
+                document.getElementById("gallery_img").src = img.src;
+			}
+			function close_gallery() {
+                document.getElementById("gallery").classList.remove("opened");
+			}
+			
+			document.getElementById("changelog_b").addEventListener("click", function () {
+                document.getElementById("changelog").classList.add("opened");
+			})
+            function close_changelog() {
+                document.getElementById("changelog").classList.remove("opened");
+			}
+			document.querySelector("#changelog .section").addEventListener("click", event => {
+				event._click_on_section = true;
+			})
+			document.getElementById("changelog").addEventListener("click", event => {
+				if (event._click_on_section) return;
+				event.currentTarget.classList.remove("opened");
+			})
+		</script>
+	</div>
+</body>
 </html>

@@ -1,117 +1,156 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<link rel="icon" href="../../img/icon.svg" type="image/png">
-		<link rel="stylesheet" href="../../css/style.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Ubuntu&display=swap" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="og:image" content="https://raw.githubusercontent.com/KoteykaTheCat/ktcstudios/main/img/og_goddaamn_tower_defense.png">
-		<meta name="twitter:image" content="https://raw.githubusercontent.com/KoteykaTheCat/ktcstudios/main/img/og_goddaamn_tower_defense.png">
-		<meta property="twitter:card" content="summary_large_image">
-		<meta property="og:site_name" content="KTC Studios">
-		
-		<title> KTC Studios - Goddaamn Tower Defense </title>
-		<meta property="og:locale" content="ru">
-		<meta name="og:title" content="KTC Studios - Goddaamn Tower Defense">
-		<meta name="og:description" content="На ваш замок нападают разнообразные клещи из пещеры">
-		<meta name="description" content="На ваш замок нападают разнообразные клещи из пещеры">
-		<meta name="og:url" content="https://koteykathecat.github.io/ktcstudios/games/goddaamntowerdefense">
-		<meta property="og:keywords" content="goddaamn tower defense, goddamn tower defense, гадээм тавер дефенс, гадэм тавер дефенс, гаддэм">
-	</head>
-	
-	<body class="body">
-		<div class="page">
-			<header class="header">
-				<div class="header_div">
-					<img class="header_icon" src="../../img/icon.svg">
-					<div class="header_links">
-						<a class="header_button main" href="../../"> Главная </a>
-						<a class="header_button main" href="../"> Игры </a>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="../../img/icon.svg" type="image/png">
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Ubuntu&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:site_name" content="KTC Studios">
+
+	<title> KTC Studios - Goddaamn Tower Defense </title>
+	<meta name="description" content="На ваш замок нападают разнообразные клещи из пещеры">
+	<meta name="author" content="KoteykaTheCat">
+	<meta name="keywords" content="goddaamn tower defense, goddamn tower defense, гадээм тавер дефенс, гадэм тавер дефенс, гаддэм">
+
+	<meta property="og:title" content="KTC Studios - Goddaamn Tower Defense">
+	<meta property="og:locale" content="ru">
+	<meta property="og:description" content="На ваш замок нападают разнообразные клещи из пещеры">
+	<meta property="og:keywords" content="goddaamn tower defense, goddamn tower defense, гадээм тавер дефенс, гадэм тавер дефенс, гаддэм">
+	<meta property="og:image" content="https://raw.githubusercontent.com/KoteykaTheCat/ktcstudios/main/img/og_goddaamn_tower_defense.png">
+	<meta property="og:url" content="https://koteykathecat.github.io/ktcstudios/games/goddaamntowerdefense">
+
+	<meta property="twitter:image" content="https://raw.githubusercontent.com/KoteykaTheCat/ktcstudios/main/img/og_goddaamn_tower_defense.png">
+	<meta property="twitter:card" content="summary_large_image">
+</head>
+
+<body class="body">
+	<div class="page">
+		<header class="header">
+			<div class="header_div">
+				<img class="header_icon" src="../../img/icon.svg" alt="">
+				<div class="header_links">
+					<a class="header_b main" href="../../"> Главная </a>
+					<a class="header_b main" href="../"> Игры </a>
+				</div>
+			</div>
+			<a class="header_b translate" href="../../en/games/goddaamntowerdefense">
+				<img class="translate_flag" src="../../img/icon_en.svg" alt=""> Eng
+			</a>
+		</header>
+		<main class="content">
+			<section class="logo goddaamntowerdefense">
+				<div class="logo_div">
+					<img class="logo_img border shadow" src="../../img/icon_goddaamn_tower_defense.png" alt="">
+					<div class="logo_title">
+						<div class="title"> Goddaamn Tower Defense </div>
 					</div>
 				</div>
-				<a class="header_button translate" href="../../en/games/goddaamntowerdefense">
-					<img class="translate_flag" src="../../img/icon_en.svg"> Eng
+			</section>
+
+			<section class="section">
+				<div>
+					<div class="game_des pg">
+						На ваш замок нападают разнообразные клещи из пещеры
+					</div>
+					<div class="game_des pg">
+						Это версия <span style="color: crimson"> Dev! </span> В ней нет всех механик, интерактива и т.д.
+					</div>
+					<div class="game_ver pg">
+						Версия: Dev 0.0.0.1 <br>
+						Дата обновления: 19 марта 2024 <br>
+						Дата выхода: 19 марта 2024
+					</div>
+				</div>
+			</section>
+
+			<section class="section_screenshots">
+				<div class="gallery" id="gallery" onclick="close_gallery()">
+					<img class="gallery_img" src="img/items_1.png" id="gallery_img">
+				</div>
+
+				<div class="screenshots">
+					<div class="slides">
+						<input type="radio" name="r" id="r1" checked>
+						<input type="radio" name="r" id="r2">
+						<input type="radio" name="r" id="r3">
+						<input type="radio" name="r" id="r4">
+
+						<div class="screenshot s1"><img src="../../img/screen_goddaamn_tower_defense_0.png" onclick="open_gallery(this)"></div>
+						<div class="screenshot"><img src="../../img/screen_goddaamn_tower_defense_1.png" onclick="open_gallery(this)"></div>
+						<div class="screenshot"><img src="../../img/screen_goddaamn_tower_defense_2.png" onclick="open_gallery(this)"></div>
+						<div class="screenshot"><img src="../../img/screen_goddaamn_tower_defense_3.png" onclick="open_gallery(this)"></div>
+					</div>
+				</div>
+				<div class="screenshots_nav">
+					<label for="r1" class="sc_nav_bar"></label>
+					<label for="r2" class="sc_nav_bar"></label>
+					<label for="r3" class="sc_nav_bar"></label>
+					<label for="r4" class="sc_nav_bar"></label>
+				</div>
+			</section>
+
+			<section class="links">
+				<a class="link_b black" href="https://www.dropbox.com/scl/fi/348lpj7ar1r4ibfdsr90k/Goddaamn-Tower-Defense.zip?rlkey=c89pcgym81q26i8ja77hmh6bi&dl=1">
+					<img class="link_img" src="../../img/icon_windows.svg">
+					<div class="link_text"> Windows (105 Мб) </div>
 				</a>
-			</header>
-			<main class="content">
-				<section class="logo goddaamntowerdefense">
-					<div class="logo_div">
-						<img class="logo_img shadow" src="../../img/icon_goddaamn_tower_defense.png">
-						<div class="logo_title">
-							<div class="title"> Goddaamn Tower Defense </div>
-						</div>
+				<a class="link_b black android" href="https://www.dropbox.com/scl/fi/fu7u7hdg8mk4al0iuccia/Goddaamn-Tower-Defense.apk?rlkey=65wyl6v7t63iuno4ynl6u9174&dl=1">
+					<img class="link_img" src="../../img/icon_android.svg">
+					<div class="link_text"> Android (56 Мб) </div>
+				</a>
+			</section>
+
+			<section class="links">
+				<button id="changelog_b"></button>
+				<label class="link_b black" for="changelog_b">
+					<span class="link_text"> Изменения </span>
+				</label>
+			</section>
+
+			<section class="changelog" id="changelog">
+				<div class="section">
+					<div class="ch_content title"> Изменения </div>
+					<div class="ch_content cur_ver"> Dev 0.0.0.1 </div>
+					<div class="ch_content content">
+						• Игра вышла
 					</div>
-				</section>
-				
-				<section class="section_game_description">
-					<div>
-						<div class="game_description">
-							На ваш замок нападают разнообразные клещи из пещеры
-						</div>
-						<div class="game_description">
-							Это версия Dev! В ней нет всех механик, интерактива и т.д.
-						</div>
-						<div class="game_version_page">
-							Версия: Dev 0.0.0.1 <br>
-							Дата обновления: 19 марта 2024 <br>
-							Дата выхода: 19 марта 2024
-						</div>
-					</div>
-				</section>
-				
-				<section class="section_screenshots">
-					<div class="screenshots">
-						<div class="slides">
-							<input type="radio" name="r" id="r1" checked>
-							<input type="radio" name="r" id="r2">
-							<input type="radio" name="r" id="r3">
-							<input type="radio" name="r" id="r4">
-							
-							<div class="screenshot s1"><img src="../../img/screen_goddaamn_tower_defense_0.png"></div>
-							<div class="screenshot"><img src="../../img/screen_goddaamn_tower_defense_1.png"></div>
-							<div class="screenshot"><img src="../../img/screen_goddaamn_tower_defense_2.png"></div>
-							<div class="screenshot"><img src="../../img/screen_goddaamn_tower_defense_3.png"></div>
-						</div>
-					</div>
-					<div class="screenshots_nav">
-						<label for="r1" class="sc_nav_bar"></label>
-						<label for="r2" class="sc_nav_bar"></label>
-						<label for="r3" class="sc_nav_bar"></label>
-						<label for="r4" class="sc_nav_bar"></label>
-					</div>
-				</section>
-				
-				<section class="links">
-					<a class="links_button black" href="https://www.dropbox.com/scl/fi/348lpj7ar1r4ibfdsr90k/Goddaamn-Tower-Defense.zip?rlkey=c89pcgym81q26i8ja77hmh6bi&dl=1">
-						<img class="links_image" src="../../img/icon_windows.svg">
-						<div class="links_text"> Windows (105 Мб) </div>
-					</a>
-					<a class="links_button black android" href="https://www.dropbox.com/scl/fi/fu7u7hdg8mk4al0iuccia/Goddaamn-Tower-Defense.apk?rlkey=65wyl6v7t63iuno4ynl6u9174&dl=1">
-						<img class="links_image" src="../../img/icon_android.svg">
-						<div class="links_text"> Android (56 Мб) </div>
-					</a>
-				</section>
-				
-				<section class="section changelog">
-					<div>
-						<div class="ch_content title"> Изменения </div>
-						<div class="ch_content cur_ver"> Dev 0.0.0.1 </div>
-						<div class="ch_content content">
-							• Игра вышла
-						</div>
-					</div>
-				</section>
-			</main>
-			
-			<footer class="footer">				
-				<img class="ktc_smoke" src="https://raw.githubusercontent.com/KoteykaTheCat/ktcstudios/main/img/ktc_smoke.gif" height="100">
-				<div class="copyright">
-					© 2024 KTC Studios
 				</div>
-			</footer>
-		</div>
-	</body>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<img class="ktc_smoke" src="https://raw.githubusercontent.com/KoteykaTheCat/ktcstudios/main/img/ktc_smoke.gif" height="100" alt="">
+			<a class="copyright" href="https://github.com/KoteykaTheCat/ktcstudios/blob/main/LICENSE.txt">
+				© 2024 KTC Studios
+			</a>
+		</footer>
+
+		<script>
+			function open_gallery(img) {
+				document.getElementById("gallery").classList.add("opened");
+				document.getElementById("gallery_img").src = img.src;
+			}
+			function close_gallery() {
+				document.getElementById("gallery").classList.remove("opened");
+			}
+
+			document.getElementById("changelog_b").addEventListener("click", function () {
+				document.getElementById("changelog").classList.add("opened");
+			})
+			function close_changelog() {
+				document.getElementById("changelog").classList.remove("opened");
+			}
+			document.querySelector("#changelog .section").addEventListener("click", event => {
+				event._click_on_section = true;
+			})
+			document.getElementById("changelog").addEventListener("click", event => {
+				if (event._click_on_section) return;
+				event.currentTarget.classList.remove("opened");
+			})
+		</script>
+	</div>
+</body>
 </html>
